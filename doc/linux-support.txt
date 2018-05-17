@@ -1,0 +1,16 @@
+There is Linux support for QCN under BOINC as well as our standalone QCNLive program (QCNLive Linux version is at:  http://qcn.stanford.edu/sensor/download/qcnlive-linux.zip).  all graphics require Mesa or similar OpenGL 3D libraries installed so you may need to 'apt-get insall mesa3d' or similar if the program doesn't start
+
+these only work with the Joywarrior 24F8 & F14 Tomcat USB sensors of course; and are sort of "experimental" or "beta versions" as I haven't been able to spend much time on Linux (it's just a "side project" as 99% of our participants are Mac & Windows).
+
+basically I rely on the Linux joystick drivers being installed, which is common these days, but not all Linux distros put in the joystick device drivers.
+
+if you have your sensor plugged in i.e. you should see a /dev/js0 or /dev/input/js0 or similar (I check for js0 through js2 as I assume one machine doesn't have multiple joysticks or sensors)
+
+so if you see a /dev/js0 etc then you probably have the joystick drivers for Linux installed and can run QCNLive (if you also have the graphics/X11/OpenGL libraries) or QCN under BOINC.
+
+for BOINC under Linux you can refer to this page:    http://boinc.berkeley.edu/wiki/Installing_on_Linux
+
+
+you will want to "attach" to our website URL:   http://qcn.stanford.edu/sensor
+
+

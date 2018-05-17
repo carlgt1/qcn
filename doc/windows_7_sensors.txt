@@ -1,0 +1,54 @@
+From: Dan Fay <Dan.Fay@microsoft.com>
+Date: Fri, 30 Jan 2009 16:02:11 -0800
+To: "jflawrence@stanford.edu" <jflawrence@stanford.edu>
+Conversation: Windows Sensor and Location Platform in Windows 7
+Subject: FW: Windows Sensor and Location Platform in Windows 7
+
+Hi Jesse – just wanted to make you ware of this in Windows 7…don’t know if makes things better/easier for you w/ quakecatcher…
+Thanks,
+Dan 
+
+Windows Sensor and Location Platform in Windows 7 <http://www.microsoft.com/whdc/sensors/> [>>Dan Fay] http://www.microsoft.com/whdc/device/sensors/default.mspx
+ 
+The Windows Sensor and Location platform, which is new for Windows 7, enables your computer and applications to adapt to their current environment. With location sensors -- including GPS devices, WWAN radios, and even triangulation technology -- your applications and gadgets can know exactly where they are, enabling them to provide more locally relevant content and functionality. Ambient light sensors, for example, can allow your computer to automatically adjust your screen's brightness based on the current lighting conditions. They can also enable applications to optimize their content for readability, making your computer more useful in a range of operating environments than ever before.
+
+The platform provides a standard way to integrate sensor and location devices into Windows, as well as a standard programming interface for applications to take advantage of these devices. On Windows 7, the user has control over how data from these devices is exposed to applications. Hardware manufacturers can learn how to write sensor and location drivers by installing the Windows 7 WDK. Developers can learn how to write location-aware and sensor-enabled applications by installing the Windows 7 SDK.
+
+ 
+
+Sensors - WinHEC 2008 
+ 
+     Windows 7 Sensor and Location Platform [WinHEC 2008; 4.4 MB] <http://download.microsoft.com/download/5/E/6/5E66B27B-988B-4F50-AF3A-C2FF1E62180F/MBL-T523_WH08.pptx>     
+Sensor and Location White Papers 
+ 
+     Implementing Light-Aware UI Using the Windows Sensor and Location Platform [1.5 MB] <http://download.microsoft.com/download/a/d/f/adf1347d-08dc-41a4-9084-623b1194d4b2/Implementing_Light_Aware_UI.docx>      
+     Integrating Ambient Light Sensors with Windows 7 Computers [296 KB] <http://download.microsoft.com/download/a/d/f/adf1347d-08dc-41a4-9084-623b1194d4b2/Integrating_Ambient_Light_Sensors_With_Windows.docx>      
+     Introducing the Windows Sensor and Location Platform [177 KB] <http://download.microsoft.com/download/a/d/f/adf1347d-08dc-41a4-9084-623b1194d4b2/Introducing_Sensors.docx>     
+Resources 
+ 
+     PDC Session: The Sensor and Location Platform: Building Context-Aware Applications <http://channel9.msdn.com/pdc2008/PC25/>      
+     MSDN Developer Forum <http://go.microsoft.com/fwlink/?LinkID=131519>   
+ 
+ 
+  Gavin Gear's Tech Blog <http://blogs.msdn.com/gavingear/default.aspx>  
+  •   Windows 7 Sensor and Location Beta SDK Documentation Live on MSDN <http://blogs.msdn.com/gavingear/archive/2009/01/13/windows-7-sensor-and-location-beta-sdk-documentation-live-on-msdn.aspx> 
+ Tue, 13 Jan 2009 18:05:00 GMT   
+  •   Windows 7 Beta Released! <http://blogs.msdn.com/gavingear/archive/2009/01/12/windows-7-beta-released.aspx> 
+ Mon, 12 Jan 2009 17:40:00 GMT   
+  •   WinHEC Session Slides for Sensor and Location Platform Available <http://blogs.msdn.com/gavingear/archive/2008/12/15/winhec-session-slides-for-sensor-and-location-platform-available.aspx> 
+ Tue, 16 Dec 2008 06:55:00 GMT     
+
+View All Recent Blog Posts... <http://www.microsoft.com/whdc/resources/blogs.mspx> 
+ 
+  Jim Travis's Blog <http://blogs.msdn.com/jimtravis/default.aspx> 
+Covering the Windows 7 Sensor and Location Platform and other cool technologies.  
+  •   Sensor and Location API Docs are live on MSDN <http://blogs.msdn.com/jimtravis/archive/2009/01/13/sensor-and-location-api-docs-are-live-on-msdn.aspx> 
+ Tue, 13 Jan 2009 07:29:00 GMT   
+  •   The ATL CSimpleMap Class <http://blogs.msdn.com/jimtravis/archive/2009/01/10/the-atl-csimplemap-class-is-great.aspx> 
+ Sat, 10 Jan 2009 07:52:00 GMT   
+  •   Cool Sensor Dev Kit Video <http://blogs.msdn.com/jimtravis/archive/2009/01/09/cool-sensor-dev-kit-video.aspx> 
+ Fri, 09 Jan 2009 20:26:00 GMT     
+
+View All Recent Blog Posts... <http://www.microsoft.com/whdc/resources/blogs.mspx> 
+
+

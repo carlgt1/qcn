@@ -1,0 +1,92 @@
+-------------------------------------------------------------------------------
+
+                      Install MotionNode for Linux
+
+-------------------------------------------------------------------------------
+                     Version 1.2.0, July 28, 2008
+                       http://www.motionnode.com/
+-------------------------------------------------------------------------------
+
+1. System Requirements
+
+  - PC with USB host port
+  - Linux x86, 2.6.12+ kernel
+  - Web browser with Javascript enabled (Firefox)
+  - CD-ROM drive
+  - Internet connection recommended
+
+
+2. Install
+
+  The MotionNode software is distributed in a single folder as a Tarball. To
+  install, simply un-tar the compressed package into your desired installation
+  folder. For example, to install the software in the "/usr/local" folder run
+  the following sequence of commands:
+
+    $ tar zxf MotionNode_x86.tar.gz
+    $ cd MotionNode_x86
+    $ ./InitializeHome.sh
+    $ cd ..
+    $ sudo mv MotionNode_x86 /usr/local
+
+  To run the MotionNode software as a daemon (in the background) type:
+
+    $ /usr/local/MotionNode_x86/MotionNodeDaemon
+
+  You should now be able to access the web browser based user interface at:
+
+    http://127.0.0.1:32080/ or http://hostname:32080/
+
+
+3. Getting Started
+
+  See the "Getting Started" guide for more information. All documentation is
+  available on our web site at:
+
+    http://www.motionnode.com/documentation.html
+
+  Note that the Linux version of the MotionNode software currently does not
+  include:
+  
+  - MotionNode Viewer, standalone viewer application
+  - MotionNode Monitor, tray application to monitor device arrival and
+    automatically connect
+
+
+4. Permissions
+
+  The MotionNode Daemon requires read and write access to the data folder. You
+  may choose any data folder in your initial setup, just be sure that the
+  daemon can write files to it.
+
+  Also, you may need to modify the permissions of the serial device node such
+  that the daemon user has read and write access. Here is an example command
+  to enable group level access to all USB serial nodes.
+
+    $ chmod g+rw /dev/ttyUSB*
+
+
+5. Distributions
+
+  We have tested the MotionNode software on the following Linux distributions.
+  
+  - Ubuntu 7.04 and 7.10
+  - openSUSE 10.3
+  - Fedora Core 8
+
+
+6. License
+
+  (C) Copyright GLI Interactive LLC 2008. All rights reserved.
+
+  The coded instructions, statements, computer programs, and/or related material
+  (collectively the "Data") in these files contain unpublished information
+  proprietary to GLI Interactive LLC, which is protected by US federal copyright
+  law and by international treaties.
+
+  The Data may not be disclosed or distributed to third parties, in whole or in
+  part, without the prior written consent of GLI Interactive LLC.
+
+  The Data is provided "as is" without express or implied warranty, and with no
+  claim as to its suitability for any purpose.
+

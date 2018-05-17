@@ -1,0 +1,57 @@
+BASEDIR = $(top_builddir)
+
+#if ($(IS_I386)
+#   BOINC_DIR = $(BASEDIR)/../boinc/mac_build/build/`uname -p`_Deployment
+#else
+#   BOINC_DIR = $(BASEDIR)/../boinc/mac_build/build/`uname -p`_Deployment
+#endif
+LIBDIR=$(top_builddir)/client/$(OSBUILD)
+BOINC_BASEDIR = $(top_builddir)/../boinc
+BOINC_DIR = $(BOINC_BASEDIR)
+
+FTGL_DIR=$(top_builddir)/ftgl-2.1.3
+FREETYPE_DIR=$(top_builddir)/freetype-2.4.6
+ZLIB_DIR=$(top_builddir)/zlib-1.2.5
+CURL_DIR=$(top_builddir)/curl-7.25.0
+
+#if OS_DARWIN
+#   BOINC_LIB_DIR = $(BOINC_BASEDIR)/mac_build/build/Deployment
+#   BOINC_LIB = -L$(BOINC_LIB_DIR) -lboinc -lboinc_api -lboinc_graphics2 -L$(BOINC_BASEDIR)/zip/build/Release -lboinc_zip
+#else
+#   BOINC_LIB = $(BOINC_DIR)/api/libboinc_api.a $(BOINC_DIR)/api/libboinc_graphics2.a $(BOINC_DIR)/lib/libboinc.a $(BOINC_DIR)/zip/libboinc_zip.a
+   BOINC_LIB = -L$(LIBDIR) -lboinc_api -lboinc_graphics2 -lboinc -lboinc_zip
+#endif
+
+
+#ZIPARCH_DIR = $(BASEDIR)/ziparchive/ZipArchive
+#BOINC_LIB = -L$(BOINC_DIR)/api -lboinc_api -lboinc_graphics2 -L$(BOINC_DIR)/lib -lboinc -L$(ZIPARCH_DIR) -lziparch
+
+UTILDIR = $(BASEDIR)/client/util
+MAINDIR = $(BASEDIR)/client/main
+SENSORDIR = $(BASEDIR)/client/sensor
+GRAPHICSDIR = $(BASEDIR)/client/graphics
+STRIP = strip
+
+PTHREAD_CFLAGS = @PTHREAD_CFLAGS@
+PTHREAD_LIBS = @PTHREAD_LIBS@
+
+AM_CPPFLAGS = \
+        -Wall \
+        -DQCN -D_THREAD_SAFE -D_ZLIB \
+        -O2 \
+        -I$(BASEDIR) \
+        -I$(MAINDIR) \
+        -I$(SENSORDIR) \
+        -I$(UTILDIR) \
+        -I$(FTGL_DIR)/include \
+        -I$(FREETYPE_DIR)/include \
+        -I$(ZLIB_DIR) \
+        -I$(CURL_DIR)/include \
+        -I$(BOINC_DIR)/lib \
+        -I$(BOINC_DIR)/api \
+        -I$(BOINC_DIR)/zip \
+        -I$(GRAPHICSDIR) 
+#-I$(ZIPARCH_DIR) 
+
+AM_LDFLAGS = -L$(UTILDIR) -L$(LIBDIR)
+

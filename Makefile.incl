@@ -1,0 +1,52 @@
+# ignore any LIBS set by configure
+
+LIBS=
+
+BASEDIR = $(top_builddir)
+BOINC_BASEDIR = $(top_builddir)/../boinc
+BOINC_DIR = $(BOINC_BASEDIR)
+
+FTGL_DIR=$(top_builddir)/ftgl-2.1.3
+FREETYPE_DIR=$(top_builddir)/freetype-2.4.6
+ZLIB_DIR=$(top_builddir)/zlib-1.2.5
+CURL_DIR=$(top_builddir)/curl-7.34.0
+
+PTHREAD_CFLAGS = @PTHREAD_CFLAGS@
+PTHREAD_LIBS = @PTHREAD_LIBS@
+
+UTILDIR = $(BASEDIR)/client/util
+MAINDIR = $(BASEDIR)/client/main
+SENSORDIR = $(BASEDIR)/client/sensor
+GRAPHICSDIR = $(BASEDIR)/client/graphics
+STRIP = strip
+
+AM_LIBTOOLFLAGS =
+AM_CPPFLAGS = \
+        -Wall \
+        -D_USE_NTPDATE_EXEC_ \
+        -DQCN -D_THREAD_SAFE -D_ZLIB \
+        -O2 \
+        -I$(TCINCLUDES) \
+        -I$(BASEDIR) \
+        -I$(MAINDIR) \
+        -I$(SENSORDIR) \
+        -I$(UTILDIR) \
+        -I$(FTGL_DIR)/include \
+        -I$(FREETYPE_DIR)/include \
+        -I$(ZLIB_DIR) \
+        -I$(CURL_DIR)/include \
+        -I$(BOINC_DIR)/lib \
+        -I$(BOINC_DIR)/api \
+        -I$(BOINC_DIR)/zip \
+        -I$(BOINC_DIR)/samples/jpeglib \
+        -I$(GRAPHICSDIR) \
+	$(PTHREAD_CFLAGS)
+
+AM_CFLAGS = -Wall -Wextra -Wshadow -Wredundant-decls -Wdisabled-optimization -Wpointer-arith -Wstrict-aliasing -Wcast-align 
+
+AM_CXXFLAGS = $(AM_CFLAGS)
+
+AM_LDFLAGS =
+
+
+

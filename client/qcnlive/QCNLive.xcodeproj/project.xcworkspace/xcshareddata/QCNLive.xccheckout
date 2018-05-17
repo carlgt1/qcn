@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>83CAF83A-C4DB-4EDE-961E-76C5641A5CA8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QCNLive</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E4C6E0AF139572448486667AC62AEE7EB97FE58C</key>
+		<string>https://github.com/carlgt1/qcn.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>client/qcnlive/QCNLive.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E4C6E0AF139572448486667AC62AEE7EB97FE58C</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/carlgt1/qcn.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E4C6E0AF139572448486667AC62AEE7EB97FE58C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E4C6E0AF139572448486667AC62AEE7EB97FE58C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>qcn</string>
+		</dict>
+	</array>
+</dict>
+</plist>

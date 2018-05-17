@@ -1,0 +1,48 @@
+BASEDIR = $(top_builddir)
+
+#if ($(IS_I386)
+#   BOINC_DIR = $(BASEDIR)/../boinc/mac_build/build/`uname -p`_Deployment
+#else
+#   BOINC_DIR = $(BASEDIR)/../boinc/mac_build/build/`uname -p`_Deployment
+#endif
+
+BOINC_BASEDIR = $(BASEDIR)/../boinc
+BOINC_DIR = $(BOINC_BASEDIR)
+if OS_DARWIN
+   BOINC_LIB_DIR = $(BOINC_BASEDIR)/mac_build/build/Deployment
+   BOINC_LIB = -L$(BOINC_LIB_DIR) -lboinc -lboinc_api -lboinc_graphics2 -L$(BOINC_BASEDIR)/zip/build/Release -lboinc_zip
+else
+   BOINC_LIB = $(BOINC_DIR)/api/libboinc_api.a $(BOINC_DIR)/api/libboinc_graphics2.a $(BOINC_DIR)/lib/libboinc.a $(BOINC_DIR)/zip/libboinc_zip.a
+endif
+
+
+#ZIPARCH_DIR = $(BASEDIR)/ziparchive/ZipArchive
+#BOINC_LIB = -L$(BOINC_DIR)/api -lboinc_api -lboinc_graphics2 -L$(BOINC_DIR)/lib -lboinc -L$(ZIPARCH_DIR) -lziparch
+
+UTILDIR = $(BASEDIR)/client/util
+MAINDIR = $(BASEDIR)/client/main
+SENSORDIR = $(BASEDIR)/client/sensor
+GRAPHICSDIR = $(BASEDIR)/client/graphics
+STRIP = strip
+
+PTHREAD_CFLAGS = @PTHREAD_CFLAGS@
+PTHREAD_LIBS = @PTHREAD_LIBS@
+
+AM_CPPFLAGS = \
+        -Wall \
+        -DQCN -D_THREAD_SAFE -D_ZLIB \
+        -O2 \
+        -I$(BASEDIR) \
+        -I$(MAINDIR) \
+        -I$(SENSORDIR) \
+        -I$(UTILDIR) \
+        -I$(BOINC_DIR)/lib \
+        -I$(BOINC_DIR)/api \
+        -I$(BOINC_DIR)/zip \
+        -I$(BOINC_DIR)/samples/jpeglib \
+        -I$(GRAPHICSDIR) \
+        -I/usr/include -I/usr/local/include 
+#-I$(ZIPARCH_DIR) 
+
+AM_LDFLAGS = -L$(UTILDIR)
+

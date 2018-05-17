@@ -1,0 +1,130 @@
+Dreamplug with built-in Debian
+
+Works with QCN under BOINC and the USB sensors Phidgets 1056 and the ONavi's
+
+You'll want to install the following libraries ASAP:
+
+apt-get install libstdc++6
+apt-get install zip
+apt-get install libusb-1.0
+apt-get install ntpdate
+apt-get install joystick
+
+probably want to setup time & ntpdate
+
+echo "ntpdate us.pool.ntp.org" >> /etc/rc.local
+
+set time zone, UTC is good
+
+Tip: to get to the Dreamplug (and Internet access for the Dreamplug) - 
+ 1) plug the Dreamplug right into your Mac's ethernet (assuming you have wifi for Internet)
+ 2) then setup Internet sharing on the Mac and configure the Mac ethernet as "DHCP with Manual Address."  
+ 3) Set it to an address like 192.168.2.1.  
+ 4) Then the Dreamplug will be some unknown IP address - but you can find it by doing a ping from the Mac Terminal  
+     "ping 192.168.2.255" 
+ 5) you should see a reply from the Dreamplug  (and then it can use the Mac to get to the Internet i.e. via BOINC).
+ 6) there should be a similar means for Linux & Windows host boxes connected to the dreamplug
+
+make a "qcn" account and install boinc there
+
+To get the BOINC for ARMv5 (Dreamplug ARM Linux)
+download or wget http://qcn.stanford.edu/sensor/download/boinc-armv5.zip
+
+cd /home/qcn
+unzip boinc-arm5.zip -d boinc
+
+Seems to run best with the BOINC for ARM running in a root account (for permissions to the USB sensors)
+as a higher priority process (this BOINC for ARM compiled has modifications to allow non-compute intensive tasks 
+e.g. plan-class "nci" to run at a very high priority level).
+
+Note that executables can't seem to be run from external SD cards etc - only from the root file system
+(i.e. /home/qcn/boinc directory)
+
+To attach to QCN from commmand line:
+
+sudo su
+
+./boinccmd --project_attach http://qcn.stanford.edu/sensor ACCOUNT_KEY
+
+where ACCOUNT_KEY is your BOINC QCN Account Key from here:
+
+http://qcn.stanford.edu/sensor/home.php
+
+also set your location on the page for this computer entry
+
+http://qcn.stanford.edu/sensor/hosts_user.php
+
+get root as "sudo su"
+
+from /home/qcn/boinc run
+
+./boinccmd to get various status updates or actions on BOINC & QCN e.g.
+
+./boinccmd --get_messages
+
+Once your boinc is setup, you may want to put a script to start it up automatically at boot:
+
+http://qcn.stanford.edu/sensor/download/init.d.boinc.sh
+
+copy the above file to /etc/init.d  (rename it to boinc.sh)
+chmod uog+rx boinc.sh
+
+run the Debian program to start this by default upon boot (and shutdown properly etc):
+
+as root:
+
+cd /etc/init.d
+update-rc.d boinc.sh defaults
+
+It should make the necessary links to start boinc at any run level upon boot.
+
+Then you can monitor your sensor online or locally via:
+
+./boinccmd --get_messages
+
+Here is a list of other boinccmd functions:
+
+usage: boinccmd [--host hostname] [--passwd passwd] command
+
+Commands:
+ --create_account URL email passwd name
+ --file_transfer URL filename op    file transfer operation
+   op = retry | abort
+ --get_cc_status
+ --get_daily_xfer_history           show network traffic history
+ --get_disk_usage                   show disk usage
+ --get_file_transfers               show file transfers
+ --get_host_info
+ --get_message_count                show largest message seqno
+ --get_messages [ seqno ]           show messages > seqno
+ --get_notices [ seqno ]            show notices > seqno
+ --get_project_config URL
+ --get_project_status               show status of all attached projects
+ --get_proxy_settings
+ --get_simple_gui_info              show status of projects and active tasks
+ --get_state                        show entire state
+ --get_tasks                        show tasks
+ --join_acct_mgr URL name passwd    attach account manager
+ --lookup_account URL email passwd
+ --network_available                retry deferred network communication
+ --project URL op                   project operation
+   op = reset | detach | update | suspend | resume | nomorework | allowmorework
+ --project_attach URL auth          attach to project
+ --quit                             tell client to exit
+ --quit_acct_mgr                    quit current account manager
+ --read_cc_config
+ --read_global_prefs_override
+ --run_benchmarks
+ --set_debts URL1 std1 ltd1 [URL2 std2 ltd2 ...]
+ --set_gpu_mode mode duration       set GPU run mode for given duration
+   mode = always | auto | never
+ --set_network_mode mode duration
+ --set_proxy_settings
+ --set_run_mode mode duration       set run mode for given duration
+   mode = always | auto | never
+ --task url task_name op            task operation
+   op = suspend | resume | abort
+ --version, -V                      show client version
+
+
+

@@ -1,0 +1,16 @@
+#!/bin/bash
+cd ../
+rm -rf boinc
+git clone https://github.com/BOINC/boinc.git
+#git://boinc.berkeley.edu/boinc-v2.git boinc
+#svn co http://boinc.berkeley.edu/svn/trunk/boinc
+#cd boinc
+#svn co http://boinc.berkeley.edu/svn/trunk/depends_projects/zip
+#mv configure.ac configure.ac.new
+#cp ../cpdnboinc/boinc_configure.ac configure.ac
+#./_autosetup
+#./configure --disable-client --disable-server --disable-manager
+#make clean && make
+#cd zip
+#make
+cd qcn

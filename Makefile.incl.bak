@@ -1,0 +1,54 @@
+BASEDIR = $(top_builddir)
+
+#if ($(IS_I386)
+#   BOINC_DIR = $(BASEDIR)/../boinc/mac_build/build/`uname -p`_Deployment
+#else
+#   BOINC_DIR = $(BASEDIR)/../boinc/mac_build/build/`uname -p`_Deployment
+#endif
+BOINC_BASEDIR = $(top_builddir)/../boinc
+BOINC_DIR = $(BOINC_BASEDIR)
+
+FTGL_DIR=$(top_builddir)/ftgl-2.1.3
+FREETYPE_DIR=$(top_builddir)/freetype-2.4.6
+ZLIB_DIR=$(top_builddir)/zlib-1.2.5
+CURL_DIR=$(top_builddir)/curl-7.25.0
+
+#if OS_ARM_LINUX
+#   BOINC_LIB = -L$(BOINC_DIR)/api -lboinc_api -L$(BOINC_DIR)/lib -lboinc -L$(BOINC_DIR)/zip -lboinc_zip
+#else
+#   LIBDIR=$(top_builddir)/client/linux_build
+#   BOINC_LIB = -L$(LIBDIR) -lboinc_api -lboinc_graphics2 -lboinc -lboinc_zip
+#endif
+
+BOINC_LIB=-L$(BOINC_DIR)/api -lboinc_api -L$(BOINC_DIR)/lib -lboinc -L$(BOINC_DIR)/zip -lboinc_zip
+
+PTHREAD_CFLAGS = @PTHREAD_CFLAGS@
+PTHREAD_LIBS = @PTHREAD_LIBS@
+
+UTILDIR = $(BASEDIR)/client/util
+MAINDIR = $(BASEDIR)/client/main
+SENSORDIR = $(BASEDIR)/client/sensor
+GRAPHICSDIR = $(BASEDIR)/client/graphics
+STRIP = strip
+
+AM_CPPFLAGS = \
+        -Wall \
+        -DQCN -D_THREAD_SAFE -D_ZLIB \
+        -O2 \
+        -I$(TCINCLUDES) \
+        -I$(BASEDIR) \
+        -I$(MAINDIR) \
+        -I$(SENSORDIR) \
+        -I$(UTILDIR) \
+        -I$(FTGL_DIR)/include \
+        -I$(FREETYPE_DIR)/include \
+        -I$(ZLIB_DIR) \
+        -I$(CURL_DIR)/include \
+        -I$(BOINC_DIR)/lib \
+        -I$(BOINC_DIR)/api \
+        -I$(BOINC_DIR)/zip \
+        -I$(BOINC_DIR)/samples/jpeglib \
+        -I$(GRAPHICSDIR) 
+#-I$(ZIPARCH_DIR) 
+
+

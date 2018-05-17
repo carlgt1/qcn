@@ -1,0 +1,18 @@
+Use ntpdate to get an offset -- download ntpd and compile and there will be an ntpdate exec
+
+run this command periodically to get offset from qcn-upl server:
+
+$HOME/qcn/client/bin/ntpdate_4.2.4_i686-apple-darwin -t 5.0 -u -q qcn-upl.stanford.edu
+
+-t is timeout in seconds (in this case 5 seconds)
+-u means use an unprivileged port (so hopefully will go through firewalls)
+-q means don't set the hardware clock, just get the info (i.e. time offset)
+
+
+Output:
+
+server 171.64.173.104, stratum 3, offset -1.065316, delay 0.12376
+10 Jan 09:17:09 ntpdate_4.2.4_i686-apple-darwin[11134]: step time server 171.64.173.104 offset -1.065316 sec
+
+Success if $? = 0 (return code is 0) and last 3 chars are "sec"  (get the double between "offset" and "sec" at the end)
+

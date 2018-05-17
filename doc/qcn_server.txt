@@ -1,0 +1,138 @@
+Notes on setting up qcn server
+
+* unzip svn.zip for the source code of the boinc & qcn server builds
+
+* install the openssl, apache webserver, database server, php
+
+openssl-1.0.0d.tar.gz
+
+httpd-2.2.20.tar.bz2
+./configure --enable-dav --enable-ssl --with-ssl=/usr/local/ssl --enable-so \
+--enable-rewrite --enable-cgi --enable-cache --enable-deflate
+
+mysql-6.0.7-alpha.zip
+
+php-5.3.8.tar.bz2
+./configure --enable-fastcgi --enable-zip --with-gd \
+--with-jpeg-dir=/usr/local/include --with-png-dir=/usr/local/include \
+--with-mysql=/usr/local/mysql --with-pear --enable-sockets \
+--with-openssl=/usr/local/ssl --with-zlib --with-curl \
+--enable-force-cgi-redirect --with-apxs2=/usr/local/apache2/bin/apxs
+
+qcn-web-backup.tgz
+cd {desired web root}
+tar xzf qcn-web-backup.tgz
+
+sac.zip
+sudo unzip sac.zip -d /usr/local
+
+gmt.tgz
+cd /usr/local
+tar xvf gmt.tgz
+
+svn.zip
+unzip svn.zip -o qcn
+
+NB:  bug with update versions, <version_num>681</version_name>
+
+----------------
+
+1) Hardcoded links/URL's
+   a) edit the boinc/project/common.inc to update the global vars (defines)
+   b) edit the svn/qcn/server/trigmon/*.h files to point to appropriate
+   c) web stuff in qcn/earthquakes --- may be some .csh scripts and php &
+inc's with hardcoded paths
+
+2) verify boinc/sched files are all appropriately modded as per
+svn/qcn/server/boincmods
+
+3) symbolic links - such as /var/www/qcn/earthquakes/inc/bash.env to
+BASEDIR/boinc/server/html/project/bash.env
+
+4) email setup, for php & python, & email notification lists
+
+5) replication of remote databases to Stanford
+
+6) don't forget config.xml and schedulers.txt with the proper BOINC scheduler URL in
+boinc/sensor/html/user and boinc/continual/html/user  !
+
+7) also gui*.xml files for correct links back to project
+
+8) wordpress database queries
+
+use qcnwp;
+
+UPDATE wp_options SET option_value = replace(option_value, 'http://qcn.stanford.edu', 'http://qcn.twgrid.org') WHERE option_name = 'home' OR option_name = 'siteurl';
+
+UPDATE wp_posts SET guid = replace(guid, 'http://qcn.stanford.edu','http://qcn.twgrid.org');
+
+UPDATE wp_posts SET post_content = replace(post_content, 'http://qcn.stanford.edu', 'http://qcn.twgrid.org');
+
+--- also note have to edit by hand the Persuasion theme in WordPress Dashboard, replace old URL's etc
+
+
+9) edit/create .htaccess in ops e.g. htpasswd -c /home/boinc/web/boinc_passwd admin
+contents of .htaccess:
+
+AuthUserFile /home/boinc/web/boinc_passwd
+AuthName EnterPassword
+AuthType Basic
+require user admin
+
+10) remove .htaccess in WordPress base if any, put in /usr/local/apache2/conf/httpd.conf in Directory for wordpress site:
+
+        RewriteEngine On
+        RewriteBase /
+        RewriteRule ^index\.php$ - [L]
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule . /index.php [L]
+
+
+11) add /usr/local/gmt/lib and /usr/local/sac/lib to /etc/ld.so.conf or probably make an
+/etc/ld.so.conf.d/qcn.conf with the entries:
+/usr/local/gmt/lib
+/usr/local/sac/lib
+/usr/local/gmt/netcdf-3.6.3/lib
+
+then run ldconfig
+
+this will update the libraries
+
+12) a lot of the boinc/sensor/bin scripts *.sh & .py seem to still have hardcoded paths & database names
+
+13) ntpdate sync to qcn-upl.stanford.edu
+
+sudo apt-get install ntpdate
+or yum install ntpdate
+
+cat /etc/default/ntpdate
+# The settings in this file are used by the program ntpdate-debian, but not
+# by the upstream program ntpdate.
+
+# Set to "yes" to take the server list from /etc/ntp.conf, from package ntp,
+# so you only have to keep it in one place.
+NTPDATE_USE_NTP_CONF=yes
+
+# List of NTP servers to use  (Separate multiple servers with spaces.)
+# Not used if NTPDATE_USE_NTP_CONF is yes.
+NTPSERVERS="qcn-upl.stanford.edu"
+
+# Additional options to pass to ntpdate
+NTPOPTIONS=""
+
+add to root cron:  @hourly /etc/network/if-up.d/ntpdate
+
+14)  php PEAR email  -- for html/inc/email.inc -- also change EMAIL_FOM in
+project/project.inc
+
+wget http://pear.php.net/go-pear.phar
+php go-pear.phar
+pear version
+pear channel-update pear.php.net
+pear install Mail
+pear install Net_SMTP
+pear install Net_SMTP
+pear install Net_Socket
+
+

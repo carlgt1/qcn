@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ADDBDF68-592A-3C8D-991B-22AC92C33D8D}</ProjectGuid>
+    <RootNamespace>QCNLive</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>QCNLive</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>QCNLive</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>QCNLive</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>QCNLive</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>QCNLive</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>QCNLive</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>QCNLive</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>QCNLive</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QCNLive</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QCNLive</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">QCNLive</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">QCNLive</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">.exe</TargetExt>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QCNLive</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QCNLive</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">QCNLive</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">QCNLive</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">.exe</TargetExt>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\qcn;..\..\..\boinc\samples\jpeglib;..\..\zlib-1.2.5;..\..\bzip2-1.0.6;..\..\curl-7.25.0\include;..\..\ftgl-2.1.3\include;..\..\freetype-2.4.6\include;..\main;..\sensor;..\util;../../../boinc/win_build;..\..\..\boinc\lib;..\..\..\boinc\api;..\..\..\boinc\zip;..\graphics;$(QTDIR)\include;$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_NO_DEBUG;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;NDEBUG;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>windows.h;GL/gl.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../sensor/motionnodeaccel/MotionNodeAccelAPI.lib;qtmain.lib;Qt5Core5.lib;wsock32.lib;hid.lib;setupapi.lib;winmm.lib;comctl32.lib;boinc_zip.lib;curllib.lib;jpeglib.lib;zlib.lib;MotionNodeAccelAPI.lib;QtOpenGL45.lib;QtGui45.lib;QtCore45.lib;ftgl.lib;freetype.lib;boinc_lib.lib;boinc_api.lib;Qt5OpenGL5.lib;Qt5Widgets5.lib;Qt5Gui5.lib;libEGL.lib;libGLESv2.lib;gdi32.lib;user32.lib;Qt5PrintSupport5.lib;Qt5Test5.lib;Qt5Concurrent5.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;opengl32.lib;glu32.lib;Qt5PrintSupport.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;c:/projects/qcn/client/win_build,;C:\Qt\Qt5.0.0\5.0.0\msvc2010/lib;C:\Qt\Qt5.0.0\5.0.0\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\QCNLive.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\qcn;..\..\..\boinc\samples\jpeglib;..\..\zlib-1.2.5;..\..\bzip2-1.0.6;..\..\curl-7.25.0\include;..\..\ftgl-2.1.3\include;..\..\freetype-2.4.6\include;..\main;..\sensor;..\util;../../../boinc/win_build;..\..\..\boinc\lib;..\..\..\boinc\api;..\..\..\boinc\zip;..\graphics;$(QTDIR)\include;$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_NO_DEBUG;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;NDEBUG;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>windows.h;GL/gl.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../sensor/motionnodeaccel/MotionNodeAccelAPI.lib;qtmain.lib;Qt5Core5.lib;wsock32.lib;hid.lib;setupapi.lib;winmm.lib;comctl32.lib;boinc_zip.lib;curllib.lib;jpeglib.lib;zlib.lib;MotionNodeAccelAPI.lib;QtOpenGL45.lib;QtGui45.lib;QtCore45.lib;ftgl.lib;freetype.lib;boinc_lib.lib;boinc_api.lib;Qt5OpenGL5.lib;Qt5Widgets5.lib;Qt5Gui5.lib;libEGL.lib;libGLESv2.lib;gdi32.lib;user32.lib;Qt5PrintSupport5.lib;Qt5Test5.lib;Qt5Concurrent5.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;opengl32.lib;glu32.lib;Qt5PrintSupport.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;c:/projects/qcn/client/win_build,;C:\Qt\Qt5.0.0\5.0.0\msvc2010/lib;C:\Qt\Qt5.0.0\5.0.0\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\QCNLive.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\qcn;..\..\..\boinc\samples\jpeglib;..\..\zlib-1.2.5;..\..\bzip2-1.0.6;..\..\curl-7.34.0\include;..\..\ftgl-2.1.3\include;..\..\freetype-2.4.6\include;..\main;..\sensor;..\util;../../../boinc/win_build;..\..\..\boinc\lib;..\..\..\boinc\api;..\..\..\boinc\zip;..\graphics;$(QTDIR)\include;$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_USE_NTPDATE_EXEC_;_CRT_SECURE_NO_DEPRECATE;_ZLIB;APP_GRAPHICS;WIN32;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;QCN;_THREAD_SAFE;CURL_STATICLIB;QT_NO_DEBUG;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;NDEBUG;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>windows.h;GL/gl.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wsock32.lib;hid.lib;setupapi.lib;winmm.lib;comctl32.lib;boinc_zipl.lib;libcurl.lib;jpeglibl.lib;zlibl.lib;ftgll.lib;freetypel.lib;boinc_libl.lib;boinc_apil.lib;gdi32.lib;user32.lib;Ws2_32.lib;Wldap32.lib;psapi.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;c:\projects\qcn\curl-7.34.0\vs\vc8\lib\Release\;c:/projects/qcn/client/win_build;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>..\bin\QCNLive.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>..\bin\setwinverl.exe deploy</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Deploy to QCN</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\qcn;..\..\..\boinc\samples\jpeglib;..\..\zlib-1.2.5;..\..\bzip2-1.0.6;..\..\curl-7.25.0\include;..\..\ftgl-2.1.3\include;..\..\freetype-2.4.6\include;..\main;..\sensor;..\util;../../../boinc/win_build;..\..\..\boinc\lib;..\..\..\boinc\api;..\..\..\boinc\zip;..\graphics;$(QTDIR)\include;$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_USE_NTPDATE_EXEC_;_CRT_SECURE_NO_DEPRECATE;_ZLIB;APP_GRAPHICS;WIN32;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;QCN;_THREAD_SAFE;CURL_STATICLIB;QT_NO_DEBUG;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;NDEBUG;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>windows.h;GL/gl.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wsock32.lib;hid.lib;setupapi.lib;winmm.lib;comctl32.lib;boinc_zipl.lib;libcurll.lib;jpeglibl.lib;zlibl.lib;ftgll.lib;freetypel.lib;boinc_libl.lib;boinc_apil.lib;gdi32.lib;user32.lib;Ws2_32.lib;Wldap32.lib;psapi.lib;qtmain.lib;QtCore45.lib;QtGui45.lib;QtOpenGL45.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;opengl32.lib;glu32.lib;Qt5PrintSupport.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;c:/projects/qcn/client/win_build/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>..\bin\QCNLive.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>..\bin\setwinverl.exe deploy</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Deploy to QCN</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\qcn;..\..\..\boinc\samples\jpeglib;..\..\zlib-1.2.5;..\..\bzip2-1.0.6;..\..\curl-7.25.0\include;..\..\ftgl-2.1.3\include;..\..\freetype-2.4.6\include;..\main;..\sensor;..\util;../../../boinc/win_build;..\..\..\boinc\lib;..\..\..\boinc\api;..\..\..\boinc\zip;..\graphics;$(QTDIR)\include;$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>windows.h;GL/gl.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;../sensor/motionnodeaccel/MotionNodeAccelAPI.lib;qtmain.lib;Qt5Core5.lib;wsock32.lib;hid.lib;setupapi.lib;winmm.lib;comctl32.lib;boinc_zip.lib;curllib.lib;jpeglib.lib;zlib.lib;MotionNodeAccelAPI.lib;QtOpenGL45.lib;QtGui45.lib;QtCore45.lib;ftgl.lib;freetype.lib;boinc_lib.lib;boinc_api.lib;Qt5OpenGLd5.lib;Qt5Widgetsd5.lib;Qt5Guid5.lib;Qt5Cored5.lib;libEGLd.lib;libGLESv2d.lib;gdi32.lib;user32.lib;Qt5PrintSupportd5.lib;Qt5Testd5.lib;Qt5Concurrentd5.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;Qt5PrintSupportd.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;c:/projects/qcn/client/win_build,;C:\Qt\Qt5.0.0\5.0.0\msvc2010/lib;C:\Qt\Qt5.0.0\5.0.0\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\QCNLive.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\qcn;..\..\..\boinc\samples\jpeglib;..\..\zlib-1.2.5;..\..\bzip2-1.0.6;..\..\curl-7.25.0\include;..\..\ftgl-2.1.3\include;..\..\freetype-2.4.6\include;..\main;..\sensor;..\util;../../../boinc/win_build;..\..\..\boinc\lib;..\..\..\boinc\api;..\..\..\boinc\zip;..\graphics;$(QTDIR)\include;$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>windows.h;GL/gl.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;../sensor/motionnodeaccel/MotionNodeAccelAPI.lib;qtmain.lib;Qt5Core5.lib;wsock32.lib;hid.lib;setupapi.lib;winmm.lib;comctl32.lib;boinc_zip.lib;curllib.lib;jpeglib.lib;zlib.lib;MotionNodeAccelAPI.lib;QtOpenGL45.lib;QtGui45.lib;QtCore45.lib;ftgl.lib;freetype.lib;boinc_lib.lib;boinc_api.lib;Qt5OpenGLd5.lib;Qt5Widgetsd5.lib;Qt5Guid5.lib;Qt5Cored5.lib;libEGLd.lib;libGLESv2d.lib;gdi32.lib;user32.lib;Qt5PrintSupportd5.lib;Qt5Testd5.lib;Qt5Concurrentd5.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;Qt5PrintSupportd.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;c:/projects/qcn/client/win_build,;C:\Qt\Qt5.0.0\5.0.0\msvc2010/lib;C:\Qt\Qt5.0.0\5.0.0\msvc2010\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\QCNLive.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\qcn;..\..\..\boinc\samples\jpeglib;..\..\zlib-1.2.5;..\..\bzip2-1.0.6;..\..\curl-7.34.0\include;..\..\ftgl-2.1.3\include;..\..\freetype-2.4.6\include;..\main;..\sensor;..\util;../../../boinc/win_build;..\..\..\boinc\lib;..\..\..\boinc\api;..\..\..\boinc\zip;..\graphics;$(QTDIR)\include;$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_USE_NTPDATE_EXEC_;_CRT_SECURE_NO_DEPRECATE;_ZLIB;APP_GRAPHICS;WIN32;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;QCN;_THREAD_SAFE;CURL_STATICLIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>windows.h;GL/gl.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>zlibdl.lib;wsock32.lib;hid.lib;setupapi.lib;winmm.lib;comctl32.lib;boinc_zipdl.lib;libcurl.lib;jpeglibdl.lib;ftgldl.lib;freetypedl.lib;boinc_libdl.lib;boinc_apidl.lib;psapi.lib;gdi32.lib;user32.lib;Ws2_32.lib;Wldap32.lib;qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;c:\projects\qcn\curl-7.34.0\vs\vc8\lib\Debug\;c:/projects/qcn/client/win_build;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>..\bin\QCNLiveD.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\qcn;..\..\..\boinc\samples\jpeglib;..\..\zlib-1.2.5;..\..\bzip2-1.0.6;..\..\curl-7.25.0\include;..\..\ftgl-2.1.3\include;..\..\freetype-2.4.6\include;..\main;..\sensor;..\util;../../../boinc/win_build;..\..\..\boinc\lib;..\..\..\boinc\api;..\..\..\boinc\zip;..\graphics;$(QTDIR)\include;$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include\;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_USE_NTPDATE_EXEC_;_CRT_SECURE_NO_DEPRECATE;_ZLIB;APP_GRAPHICS;WIN32;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;QCN;_THREAD_SAFE;CURL_STATICLIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>windows.h;GL/gl.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>zlibdl.lib;wsock32.lib;hid.lib;setupapi.lib;winmm.lib;comctl32.lib;boinc_zipdl.lib;libcurldl.lib;jpeglibdl.lib;ftgldl.lib;freetypedl.lib;boinc_libdl.lib;boinc_apidl.lib;psapi.lib;gdi32.lib;user32.lib;Ws2_32.lib;Wldap32.lib;qtmaind.lib;QtCored45.lib;QtGuid45.lib;QtOpenGLd45.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;Qt5PrintSupportd.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;c:/projects/qcn/client/win_build;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>..\bin\QCNLiveD.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_USE_NTPDATE_EXEC_;FTGL_LIBRARY_STATIC;QCNLIVE;GRAPHICS_PROGRAM;APP_GRAPHICS;_ZLIB;QCN;_THREAD_SAFE;CURL_STATICLIB;_ZLIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_ES_2;QT_OPENGL_ES_2_ANGLE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\graphics\coastline.cpp" />
+    <ClCompile Include="..\sensor\csensor.cpp" />
+    <ClCompile Include="..\sensor\csensor_usb_phidgets.cpp" />
+    <ClCompile Include="..\sensor\csensor_win_laptop_hp.cpp" />
+    <ClCompile Include="..\sensor\csensor_win_laptop_thinkpad.cpp" />
+    <ClCompile Include="..\sensor\csensor_win_usb_jw.cpp" />
+    <ClCompile Include="..\sensor\csensor_win_usb_jw24f14.cpp" />
+    <ClCompile Include="..\sensor\csensor_win_usb_onavi.cpp" />
+    <ClCompile Include="..\util\cserialize.cpp" />
+    <ClCompile Include="DebugDLL\moc_dlgmakequake.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DebugDLL\moc_dlgsettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DebugDLL\moc_myframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DebugDLL\moc_qcnopenglwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DebugDLL\moc_qcnqt.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_qcnopenglwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="dlgmakequake.cpp" />
+    <ClCompile Include="dlgsettings.cpp" />
+    <ClCompile Include="..\util\execproc.cpp" />
+    <ClCompile Include="..\util\gzstream.cpp" />
+    <ClCompile Include="..\main\main.cpp" />
+    <ClCompile Include="..\util\md5.cpp" />
+    <ClCompile Include="myframe.cpp" />
+    <ClCompile Include="..\graphics\nation_boundary.cpp" />
+    <ClCompile Include="..\graphics\plate_boundary.cpp" />
+    <ClCompile Include="..\graphics\qcn_2dplot.cpp" />
+    <ClCompile Include="..\graphics\qcn_cube.cpp" />
+    <ClCompile Include="..\util\qcn_curl.cpp" />
+    <ClCompile Include="..\graphics\qcn_earth.cpp" />
+    <ClCompile Include="..\graphics\qcn_game_match.cpp" />
+    <ClCompile Include="..\graphics\qcn_graphics.cpp" />
+    <ClCompile Include="..\main\qcn_shmem.cpp" />
+    <ClCompile Include="..\util\qcn_signal.cpp" />
+    <ClCompile Include="..\util\qcn_thread.cpp" />
+    <ClCompile Include="..\main\qcn_thread_sensor.cpp" />
+    <ClCompile Include="..\main\qcn_thread_sensor_loop.cpp" />
+    <ClCompile Include="..\main\qcn_thread_sensor_util.cpp" />
+    <ClCompile Include="..\main\qcn_thread_time.cpp" />
+    <ClCompile Include="..\util\qcn_util.cpp" />
+    <ClCompile Include="qcnopenglwidget.cpp" />
+    <ClCompile Include="qcnqt.cpp" />
+    <ClCompile Include="..\util\sac.cpp" />
+    <ClCompile Include="..\util\texture.cpp" />
+    <ClCompile Include="..\util\trickledown.cpp" />
+    <ClCompile Include="..\util\trickleup.cpp" />
+    <ClCompile Include="..\util\ttfont.cpp" />
+    <ClCompile Include="ReleaseDLL\moc_dlgmakequake.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ReleaseDLL\moc_dlgsettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ReleaseDLL\moc_myframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ReleaseDLL\moc_qcnopenglwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ReleaseDLL\moc_qcnqt.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_qcnopenglwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\graphics\qcn_graphics.h" />
+    <ClInclude Include="..\main\define.h" />
+    <CustomBuild Include="qcnopenglwidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">Moc%27ing qcnopenglwidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">Moc%27ing qcnopenglwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">Moc%27ing qcnopenglwidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">Moc%27ing qcnopenglwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing qcnopenglwidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing qcnopenglwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing qcnopenglwidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing qcnopenglwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+    <CustomBuild Include="dlgmakequake.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing dlgmakequake.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing dlgmakequake.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">Moc%27ing dlgmakequake.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">Moc%27ing dlgmakequake.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing dlgmakequake.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing dlgmakequake.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">Moc%27ing dlgmakequake.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">Moc%27ing dlgmakequake.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dlgsettings.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing dlgsettings.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing dlgsettings.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">Moc%27ing dlgsettings.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">Moc%27ing dlgsettings.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing dlgsettings.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing dlgsettings.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">Moc%27ing dlgsettings.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">Moc%27ing dlgsettings.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="icons.h" />
+    <ClInclude Include="..\main\main.h" />
+    <CustomBuild Include="myframe.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing myframe.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing myframe.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">Moc%27ing myframe.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">Moc%27ing myframe.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing myframe.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing myframe.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">Moc%27ing myframe.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">Moc%27ing myframe.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="qcnlive_define.h" />
+    <CustomBuild Include="qcnqt.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_NO_DEBUG -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DNDEBUG -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing qcnqt.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing qcnqt.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">Moc%27ing qcnqt.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">Moc%27ing qcnqt.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_USE_NTPDATE_EXEC_ -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DAPP_GRAPHICS -D_ZLIB -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.34.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -D_USE_NTPDATE_EXEC_ -D_CRT_SECURE_NO_DEPRECATE -D_ZLIB -DAPP_GRAPHICS -DWIN32 -DFTGL_LIBRARY_STATIC -DQCNLIVE -DGRAPHICS_PROGRAM -DQCN -D_THREAD_SAFE -DCURL_STATICLIB -DQT_OPENGL_ES_2 -DQT_OPENGL_ES_2_ANGLE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -D_MBCS  "-I.\..\..\..\qcn" "-I.\..\..\..\boinc\samples\jpeglib" "-I.\..\..\zlib-1.2.5" "-I.\..\..\bzip2-1.0.6" "-I.\..\..\curl-7.25.0\include" "-I.\..\..\ftgl-2.1.3\include" "-I.\..\..\freetype-2.4.6\include" "-I.\..\main" "-I.\..\sensor" "-I.\..\util" "-I.\..\..\..\boinc\win_build" "-I.\..\..\..\boinc\lib" "-I.\..\..\..\boinc\api" "-I.\..\..\..\boinc\zip" "-I.\..\graphics" "-I$(QTDIR)\include" "-I$(QTDIR)\src\3rdparty\webkit\Source\ThirdParty\ANGLE\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWidgets" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing qcnqt.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing qcnqt.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">Moc%27ing qcnqt.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">Moc%27ing qcnqt.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QCNLive.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Qt5Version_x0020_Win32="$(DefaultQtVersion)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" QtVersion_x0020_Win32="4.8.4" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,25 @@
+Stanford provides user with the Software ("Virtual Seismometer Network" / "Quake Catcher Network") AS IS and WITH ALL FAULTY.  
+
+User acknowledges that Stanford will not provide User with any maintenance or support for the Software.  
+
+Stanford makes no representations and extends no warranties of any kind, either express or implied.  
+
+Stanford disclaims any express or implied warranty of merchantability, of fitness for a particular purpose, 
+or of non-infringement. 
+
+Stanford is not liable for any direct or indirect damages in connection with the use of the Software. 
+
+Among other things, Stanford is not responsible for:
+
+        1) any damage to the laptop as a result of
+
+            a) repetitively accessing the internal accelerometer
+
+            b) actions the user might take while experimenting with the
+               accelerometer and associated software.
+
+        2) any distress to users caused by interpretation of acceleration as being representative of an earthquake.
+
+        The user understands that the acceleration data from his/her laptop will be shared publicly.
+
+

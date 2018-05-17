@@ -2,7 +2,7 @@ This is the git repository for the Quake-Catcher Network project, Home Page:
 
 http://quakecatcher.net
 
-All files are (c) 2007-2016 Incorporated Research Institutions for Seismology (IRIS)
+All files are (c) 2007-2018 Carl Christensen
 
 Project formerly developed at Stanford University (2007-2014), the hosted at CalTech, now at USC via 
 the Southern California Earthquake Center with support by IRIS.

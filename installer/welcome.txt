@@ -1,0 +1,10 @@
+This is a demonstration version of the Quake Catcher Network software.
+
+If you have a compatible computer; it will display accelerometer data which may be useful in sensing and/or demonstrating seismic events.
+
+If you have an Internet connection, it will also get the latest USGS earthquake data which will be displayed on various views
+in the graphics portion of the software.
+
+For live participation in the Quake Catcher Network, please run the BOINC software (http://boinc.berkeley.edu) 
+and attach to http://qcn.stanford.edu
+

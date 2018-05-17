@@ -1,0 +1,36 @@
+ONavi isn't very good on support as codemercs.com is for their JoyWarrior sensors.  basically after the drivers are installed you have to enumerate USB serial devices to find the sensor, i.e. the ONavi is a pseudo-modem.  I don't know if python has a way to do this ie scan COM ports in Windows (the ONavi can often be something strange like COM63).
+
+it may be easier if you know the COM port # ahead - I have to scan for the ONavi GUID:
+
+DEFINE_GUID(GUID_CLASS_ONAVI_1, 0x4d36e978L, 0xE325, 0x11CE, 0xbf, 0xc1, \
+                        0x08, 0x00, 0x2b, 0xe1, 0x03, 0x18);
+
+
+once you've found & opened the COM port, set the communication settng if needed, ie 115.2K baud, 8 bytes, no parity, 1 sto bt, dtr control enable, rts control enable, flow control disable
+
+to read a value you send/write the ONavi comport a * (asterisk) character
+	
+the subsequent read from the COM port should yield the ONavi data as a string formtted **XXYYZZC	
+
+the first two characters are ** for the 12-bit sensor and ## for the 16-bit sensor and $$ for the not-yet-ready 24-bit sensor
+
+it sends two bytes following the leading 2 chars for the X/Y/Z components, and a single-byte at the end for a checksum (which isn't used)
+
+so in C I use:
+
+                                        x = (bytesIn[2] * 255) + bytesIn[3];
+                                        y = (bytesIn[4] * 255) + bytesIn[5];
+                                        z = (bytesIn[6] * 255) + bytesIn[7];
+
+to convert to m/s/s:
+
+                                        x1 = ((float) x - 32768.0f) * FLOAT_ONAVI_FACTOR * EARTH_G;
+                                        y1 = ((float) y - 32768.0f) * FLOAT_ONAVI_FACTOR * EARTH_G;
+                                        z1 = ((float) z - 32768.0f) * FLOAT_ONAVI_FACTOR * EARTH_G;
+
+where FLOAT_ONAVI_FACTOR = 7.629394531250e-05f
+and EARTH_G = 9.78033f
+
+
+
+

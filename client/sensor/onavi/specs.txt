@@ -1,0 +1,77 @@
+Mac install 
+
+1) back up your Mac, then go to drivers subdir and run ./install-mac.sh
+
+2) to test, in Mac Terminal:
+
+screen /dev/tty.xrusbmodem641 115200
+
+to quit the above terminal session type control-A then control-\
+
+----------------------
+
+
+We tried to keep the data as simple as possible. The data looks like:
+ 
+##xxyyzzs
+ 
+Two ASCII '#' (x23) followed by the X value upper byte, X value lower byte, Y value upper byte, Y value lower byte, Z value upper byte, Z value lower byte and an eight bit checksum.  The bytes are tightly packed and there is nothing between the data values except for the sentence start ##.  The X and Y axis will have a 0g offset at 32768d (x8000) and the Z axis offset at +1g 45874d (xB332) when oriented in the X/Y horizontal and Z up position.  The ‘s’ value is a one byte checksum.  It is a sum of all of the bytes, truncated to the lower byte.  This firmware does not transmit the temperature value.
+ 
+Finding g as a value:
+g  = x - 32768 * (5 / 65536)
+ 
+Where: x is the data value 0 - 65536 (x0000 to xFFFF). Values >32768 are positive g and <32768 are negative g.
+ 
+The sampling rate is set to 200Hz, and the analog low-pass filters are set to 50Hz.  The data is oversampled 2X over Nyquist.
+ 
+We are going to make a new version of the module, with 25Hz LP analog filters and dual sensitivity 2g / 6g shortly.  Same drivers, same interface.  I’ll get you one as soon as I we get feedback on this and make a set of those.
+
+---------------
+
+
+USB UART
+
+Exar XR21V1414
+
+http://www.exar.com/Common/Content/ProductDetails.aspx?ID=9550
+
+4-Ch Full-Speed USB UART
+Features
+
+USB 2.0 Compliant Interface
+Supports 12 Mbps USB full-speed data rate
+Supports USB suspend, resume and remote wakeup operations
+Enhanced UART Features
+Data rates up to 12 Mbps
+Fractional Baud Rate Generator
+128 byte TX FIFO
+384 byte RX FIFO
+7, 8 or 9 data bits, 1 or 2 stop bits
+Automatic Hardware (RTS/CTS or DTR/DSR)Flow Control
+Automatic Software (Xon/Xoff) Flow Control
+Multidrop mode w/ Auto Half-Duplex Transceiver Control
+Multidrop mode w/ Auto TX Enable
+Half-Duplex mode
+Selectable GPIO or Modem I/O
+Internal 48 MHz clock
+Single 2.97-3.63V power supply
+5V tolerant inputs 
+Virtual COM Port drivers
+Windows 2000, XP and Vista
+Windows CE 4.2, 5.0, 6.0
+Linux
+Mac
+Applications
+
+Portable Appliances
+External Converters (Dongles)
+Battery-Operated Devices
+Cellular Data Devices
+Factory Automation and Process Controls
+Industrial Applications
+Description
+
+The XR21V1414 is an enhanced 4-channel Universal Asynchronous Receiver and Transmitter (UART) with a USB interface. The USB interface is fully compliant to Full Speed USB 2.0 specification that supports 12 Mbps USB data transfer rate. The USB interface also supports USB suspend, resume and remote wakeup operations.
+
+The XR21V1414 operates from an internal 48MHz clock therefore no external crystal/oscillator is required like previous generation UARTs. With the fractional baud rate generator, any baud rate can accurate
+

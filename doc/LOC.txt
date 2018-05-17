@@ -1,0 +1,21 @@
+
+I found the simplistic monitoring/location code set that I wrote, which has
+a fake event triggers. It is not very good, but it has the basics.
+
+1) unzip/tar
+
+2) in src: make
+
+3) in bin: ./fake_trigs_all: this creates a set of triggers for a
+theoretical event. Assumes source time = 0.
+
+4) run qcn_server_verify. This looks for a time when there are lots of
+triggers.
+
+I am sure this is too simplistic to be much help.
+
+Note: it assumes semi-Cartesian coordinates. Works for small distances at
+low latitudes. I have a subroutine I'll forward that does distances better.
+
+Cheers,
+-Jesse

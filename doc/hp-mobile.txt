@@ -1,0 +1,624 @@
+HP Mobile Data Protection System 3D ACPI driver. Similar to hdaps in functionality.
+
+For comments mail to: yan_952@hotmail.com
+
+Signed-off-by: Yan Burman <yan_952@hotmail.com>
+
+diff -Nrubp linux-2.6.18.orig/drivers/hwmon/Kconfig linux-2.6.18.mdps/drivers/hwmon/Kconfig
+--- linux-2.6.18.orig/drivers/hwmon/Kconfig	2006-10-11 14:20:08.000000000 +0200
++++ linux-2.6.18.mdps/drivers/hwmon/Kconfig	2006-10-13 08:52:42.000000000 +0200
+@@ -507,6 +507,22 @@ config SENSORS_HDAPS
+ 	  Say Y here if you have an applicable laptop and want to experience
+ 	  the awesome power of hdaps.
+ 
++config SENSORS_MDPS
++        tristate "HP Mobile Data Protection System 3D (mdps)"
++        depends on ACPI && HWMON && INPUT && X86
++        default n
++        help
++          This driver provides support for the HP Mobile Data Protection 
++          System 3D (mdps), which is an accelerometer. Only HP nc6400 is supported
++          right now, but it may work on other models as well.  The
++          accelerometer data is readable via /proc/drivers/mdps.
++
++          This driver also provides an absolute input class device, allowing
++          the laptop to act as a pinball machine-esque joystick.
++
++          This driver can also be built as a module.  If so, the module
++          will be called mdps.
++
+ config HWMON_DEBUG_CHIP
+ 	bool "Hardware Monitoring Chip debugging messages"
+ 	depends on HWMON
+diff -Nrubp linux-2.6.18.orig/drivers/hwmon/Makefile linux-2.6.18.mdps/drivers/hwmon/Makefile
+--- linux-2.6.18.orig/drivers/hwmon/Makefile	2006-10-11 14:20:08.000000000 +0200
++++ linux-2.6.18.mdps/drivers/hwmon/Makefile	2006-10-13 10:14:10.000000000 +0200
+@@ -26,6 +26,7 @@ obj-$(CONFIG_SENSORS_FSCPOS)	+= fscpos.o
+ obj-$(CONFIG_SENSORS_GL518SM)	+= gl518sm.o
+ obj-$(CONFIG_SENSORS_GL520SM)	+= gl520sm.o
+ obj-$(CONFIG_SENSORS_HDAPS)	+= hdaps.o
++obj-$(CONFIG_SENSORS_MDPS)	+= mdps.o
+ obj-$(CONFIG_SENSORS_IT87)	+= it87.o
+ obj-$(CONFIG_SENSORS_LM63)	+= lm63.o
+ obj-$(CONFIG_SENSORS_LM70)	+= lm70.o
+diff -Nrubp linux-2.6.18.orig/drivers/hwmon/mdps.c linux-2.6.18.mdps/drivers/hwmon/mdps.c
+--- linux-2.6.18.orig/drivers/hwmon/mdps.c	1970-01-01 02:00:00.000000000 +0200
++++ linux-2.6.18.mdps/drivers/hwmon/mdps.c	2006-10-13 14:55:56.000000000 +0200
+@@ -0,0 +1,577 @@
++/*
++ *  mdps.c - HP Mobile Data Protection System 3D ACPI driver
++ *
++ *  Copyright (C) 2006 Yan Burman
++ *
++ *  This program is free software; you can redistribute it and/or modify
++ *  it under the terms of the GNU General Public License as published by
++ *  the Free Software Foundation; either version 2 of the License, or
++ *  (at your option) any later version.
++ *
++ *  This program is distributed in the hope that it will be useful,
++ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
++ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ *  GNU General Public License for more details.
++ *
++ *  You should have received a copy of the GNU General Public License
++ *  along with this program; if not, write to the Free Software
++ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ */
++
++#include <linux/kernel.h>
++#include <linux/init.h>
++#include <linux/module.h>
++#include <linux/types.h>
++#include <linux/platform_device.h>
++#include <linux/input.h>
++#include <linux/kthread.h>
++#include <linux/delay.h>
++
++#include <acpi/acpi_drivers.h>
++#include <acpi/acnamesp.h>
++
++#include <asm/uaccess.h>
++
++#define VERSION "0.2"
++
++MODULE_DESCRIPTION("HP three-axis digital accelerometer ACPI driver");
++MODULE_AUTHOR("Yan Burman (yan_952@hotmail.com)");
++MODULE_VERSION(VERSION);
++MODULE_LICENSE("GPL");
++
++#define DRIVER_NAME     "mdps"
++#define ACPI_MDPS_CLASS "accelerometer"
++#define ACPI_MDPS_ID    "HPQ0004"
++
++/* The actual chip is STMicroelectronics LIS3LV02DL or LIS3LV02DQ */
++
++#define MDPS_WHO_AM_I        0x0F /*r      00111010 */
++#define MDPS_OFFSET_X        0x16 /*rw              */
++#define MDPS_OFFSET_Y        0x17 /*rw              */
++#define MDPS_OFFSET_Z        0x18 /*rw              */
++#define MDPS_GAIN_X          0x19 /*rw              */
++#define MDPS_GAIN_Y          0x1A /*rw              */
++#define MDPS_GAIN_Z          0x1B /*rw              */
++#define MDPS_CTRL_REG1       0x20 /*rw     00000111 */
++#define MDPS_CTRL_REG2       0x21 /*rw     00000000 */
++#define MDPS_CTRL_REG3       0x22 /*rw     00001000 */
++#define MDPS_HP_FILTER RESET 0x23 /*r               */
++#define MDPS_STATUS_REG      0x27 /*rw     00000000 */
++#define MDPS_OUTX_L          0x28 /*r               */
++#define MDPS_OUTX_H          0x29 /*r               */
++#define MDPS_OUTY_L          0x2A /*r               */
++#define MDPS_OUTY_H          0x2B /*r               */
++#define MDPS_OUTZ_L          0x2C /*r               */
++#define MDPS_OUTZ_H          0x2D /*r               */
++#define MDPS_FF_WU_CFG       0x30 /*rw     00000000 */
++#define MDPS_FF_WU_SRC       0x31 /*rw     00000000 */
++#define MDPS_FF_WU_ACK       0x32 /*r               */
++#define MDPS_FF_WU_THS_L     0x34 /*rw     00000000 */
++#define MDPS_FF_WU_THS_H     0x35 /*rw     00000000 */
++#define MDPS_FF_WU_DURATION  0x36 /*rw     00000000 */
++#define MDPS_DD_CFG          0x38 /*rw     00000000 */
++#define MDPS_DD_SRC          0x39 /*rw     00000000 */
++#define MDPS_DD_ACK          0x3A /*r               */
++#define MDPS_DD_THSI_L       0x3C /*rw     00000000 */
++#define MDPS_DD_THSI_H       0x3D /*rw     00000000 */
++#define MDPS_DD_THSE_L       0x3E /*rw     00000000 */
++#define MDPS_DD_THSE_H       0x3F /*rw     00000000 */
++
++#define MDPS_ID 0x3A
++
++/* mouse device poll interval in milliseconds */
++#define MDPS_POLL_INTERVAL 30
++
++static unsigned int mouse;
++module_param(mouse, bool, 0);
++MODULE_PARM_DESC(mouse, "Enable the input class device on module load");
++
++static unsigned int power_off;
++module_param(power_off, bool, 0);
++MODULE_PARM_DESC(power_off, "Turn off device on module load");
++
++struct acpi_mdps
++{
++	struct acpi_device*     device;    /* The ACPI device */
++	u32                     irq;       /* IRQ number */
++	struct input_dev*       idev;      /* input device */
++	struct task_struct*     kthread;   /* kthread for input */
++	int                     xcalib;    /* calibrated null value for x */
++	int                     ycalib;    /* calibrated null value for y */
++	int                     is_on;     /* whether the device is on or off */
++	struct platform_device* pdev;      /* platform device */
++};
++
++static struct acpi_mdps mdps;
++
++static int mdps_add(struct acpi_device *device);
++static int mdps_remove(struct acpi_device *device, int type);
++static int mdps_suspend(struct acpi_device * device, int state);
++static int mdps_resume(struct acpi_device * device, int state);
++static int mdps_remove_fs(void);
++static int mdps_add_fs(struct acpi_device *device);
++static void mdps_mouse_enable(void);
++static void mdps_mouse_disable(void);
++
++static struct acpi_driver mdps_driver =
++{
++	.name = DRIVER_NAME,
++	.class = ACPI_MDPS_CLASS,
++	.ids = ACPI_MDPS_ID,
++	.ops = {
++		.add     = mdps_add,
++		.remove  = mdps_remove,
++		.suspend = mdps_suspend,
++		.resume  = mdps_resume
++	}
++};
++
++/** Create a single value from 2 bytes received from the accelerometer
++ * @param hi the high byte
++ * @param lo the low byte
++ * @return the resulting value
++ */
++static inline s16 mdps_glue_bytes(unsigned long hi, unsigned long lo)
++{
++	/* In "12 bit right justified" mode, bit 6, bit 7, bit 8 = bit 5 */
++	if (hi & 0x10)
++		hi |= 0xE0;
++	return (s16)(lo | ((hi << 8)));
++}
++
++static acpi_status read_acpi_int_param(acpi_handle handle, acpi_string method,
++                                       int val, unsigned long* ret)
++{
++	union acpi_object arg0 = { ACPI_TYPE_INTEGER };
++	struct acpi_object_list args = { 1, &arg0 };
++
++	arg0.integer.value = val;
++
++	return acpi_evaluate_integer(handle, method, &args, ret);
++}
++
++/** ACPI _STA method: get device status
++ * @param handle the handle of the device
++ * @param[out] ret result of the operation
++ * @return AE_OK on success
++ */
++static inline acpi_status mdps__STA(acpi_handle handle, unsigned long* ret)
++{
++	return acpi_evaluate_integer(handle, METHOD_NAME__STA, NULL, ret);
++}
++
++/** ACPI ALRD method: read a register
++ * @param handle the handle of the device
++ * @param reg the register to read
++ * @param[out] ret result of the operation
++ * @return AE_OK on success
++ */
++static inline acpi_status mdps_ALRD(acpi_handle handle, int reg,
++                                    unsigned long* ret)
++{
++	return read_acpi_int_param(handle, "ALRD", reg, ret);
++}
++
++/** ACPI _INI method: initialize the device.
++ * @param handle the handle of the device
++ * @return 0 on success
++ */
++static inline acpi_status mdps__INI(acpi_handle handle)
++{
++	return acpi_evaluate_object(handle, METHOD_NAME__INI, NULL, NULL);
++}
++
++/** ACPI ALWR method: write to a register
++ * @param handle the handle of the device
++ * @param reg the register to write to
++ * @param val the value to write
++ * @param[out] ret result of the operation
++ * @return AE_OK on success
++ */
++static acpi_status mdps_ALWR(acpi_handle handle, int reg, int val,
++                             unsigned long* ret)
++{
++	union acpi_object in_obj[2];
++	struct acpi_object_list args;
++
++	args.count              = 2;
++	args.pointer            = in_obj;
++	in_obj[0].type          = ACPI_TYPE_INTEGER;
++	in_obj[0].integer.value = reg;
++	in_obj[1].type          = ACPI_TYPE_INTEGER;
++	in_obj[1].integer.value = val;
++
++	return acpi_evaluate_integer(handle, "ALWR", &args, ret);
++}
++
++static void mdps_get_xy(acpi_handle handle, int* x, int* y)
++{
++	unsigned long x_lo, x_hi, y_lo, y_hi;
++
++	mdps_ALRD(mdps.device->handle, MDPS_OUTX_L, &x_lo);
++	mdps_ALRD(mdps.device->handle, MDPS_OUTX_H, &x_hi);
++	mdps_ALRD(mdps.device->handle, MDPS_OUTY_L, &y_lo);
++	mdps_ALRD(mdps.device->handle, MDPS_OUTY_H, &y_hi);
++
++	*x = mdps_glue_bytes(x_hi, x_lo);
++	*y = mdps_glue_bytes(y_hi, y_lo);
++}
++
++/** Kthread polling function
++ * @param data unused - here to conform to threadfn prototype
++ * @return 0 unused - here to conform to threadfn prototype
++ */
++static int mdps_mouse_kthread(void *data)
++{
++	int x, y;
++
++	while (!kthread_should_stop()) {
++		mdps_get_xy(mdps.device->handle, &x, &y);
++
++		/* need to invert the X axis for this to look natural */
++		input_report_abs(mdps.idev, ABS_X, -(x - mdps.xcalib));
++		input_report_abs(mdps.idev, ABS_Y, y - mdps.ycalib);
++
++		input_sync(mdps.idev);
++
++		msleep_interruptible(MDPS_POLL_INTERVAL);
++	}
++
++	return 0;
++}
++
++static inline void mdps_poweroff(acpi_handle handle)
++{
++	unsigned long ret;
++	mdps.is_on = 0;
++	mdps_ALWR(handle, MDPS_CTRL_REG1, 0x00, &ret);
++}
++
++static inline void mdps_poweron(acpi_handle handle)
++{
++	mdps.is_on = 1;
++	mdps__INI(handle);
++}
++
++int mdps_suspend(struct acpi_device * device, int state)
++{
++	mdps_poweroff(mdps.device->handle);
++	mdps_mouse_disable();
++
++	return 0;
++}
++
++int mdps_resume(struct acpi_device * device, int state)
++{
++	mdps_poweron(mdps.device->handle);
++
++	if (mouse)
++		mdps_mouse_enable();
++
++	return 0;
++}
++
++static acpi_status
++mdps_get_resource(struct acpi_resource *resource, void *context)
++{
++	if (resource->type == ACPI_RESOURCE_TYPE_EXTENDED_IRQ) {
++		struct acpi_resource_extended_irq* irq;
++		u32* device_irq = context;
++
++		irq = &resource->data.extended_irq;
++		*device_irq = irq->interrupts[0];
++	}
++
++	return AE_OK;
++}
++
++static void mdps_enum_resources(struct acpi_device * device)
++{
++	acpi_status status;
++
++	status = acpi_walk_resources(device->handle, METHOD_NAME__CRS,
++	                             mdps_get_resource, &mdps.irq);
++	if (ACPI_FAILURE(status))
++		printk(KERN_DEBUG "mdps: Error getting resources\n");
++}
++
++int mdps_add(struct acpi_device *device)
++{
++	unsigned long val;
++
++	if (!device)
++		return -EINVAL;
++
++	mdps.device = device;
++	strcpy(acpi_device_name(device), DRIVER_NAME);
++	strcpy(acpi_device_class(device), ACPI_MDPS_CLASS);
++	acpi_driver_data(device) = &mdps;
++
++	mdps_ALRD(device->handle, MDPS_WHO_AM_I, &val);
++	if (val != MDPS_ID) {
++		printk(KERN_INFO "mdps: Accelerometer chip not LIS3LV02D{L,Q}\n");
++		return -ENODEV;
++	}
++
++	mdps_enum_resources(device);
++	mdps_add_fs(device);
++	mdps_resume(device, 3);
++
++	if (power_off)
++		mdps_poweroff(mdps.device->handle);
++
++	return 0;
++}
++
++int mdps_remove(struct acpi_device *device, int type)
++{
++	if (!device)
++		return -EINVAL;
++
++	if (mouse)
++		mdps_mouse_disable();
++
++	return mdps_remove_fs();
++}
++
++static inline void mdps_calibrate_mouse(void)
++{
++	int x, y;
++	mdps_get_xy(mdps.device->handle, &x, &y);
++
++	mdps.xcalib = x;
++	mdps.ycalib = y;
++}
++
++void mdps_mouse_enable(void)
++{
++	if (mdps.idev)
++		return;
++
++	mdps.idev = input_allocate_device();
++	if (!mdps.idev)
++		return;
++
++	mdps_calibrate_mouse();
++
++	mdps.idev->name       = "HP Mobile Data Protection System";
++	mdps.idev->id.bustype = BUS_I2C;
++	mdps.idev->id.vendor  = 0;
++
++	input_set_abs_params(mdps.idev, ABS_X, -2048, 2048, 3, 0);
++	input_set_abs_params(mdps.idev, ABS_Y, -2048, 2048, 3, 0);
++
++	set_bit(EV_ABS, mdps.idev->evbit);
++	set_bit(EV_KEY, mdps.idev->evbit);
++	set_bit(BTN_TOUCH, mdps.idev->keybit);
++
++	if (input_register_device(mdps.idev)) {
++		input_free_device(mdps.idev);
++		mdps.idev = NULL;
++		return;
++	}
++
++	mdps.kthread = kthread_run(mdps_mouse_kthread, NULL, "kmdps");
++	if (IS_ERR(mdps.kthread)) {
++		input_unregister_device(mdps.idev);
++		mdps.idev = NULL;
++		return;
++	}
++
++	mouse = 1;
++}
++
++void mdps_mouse_disable(void)
++{
++	if (!mdps.idev)
++		return;
++
++	kthread_stop(mdps.kthread);
++
++	input_unregister_device(mdps.idev);
++	mdps.idev = NULL;
++}
++
++/* Sysfs stuff */
++static ssize_t mdps_position_show(struct device *dev,
++                                  struct device_attribute *attr, char *buf)
++{
++	int x, y;
++	mdps_get_xy(mdps.device->handle, &x, &y);
++	return sprintf(buf, "(%d, %d)\n", x, y);
++}
++
++static ssize_t mdps_position3d_show(struct device *dev,
++                                    struct device_attribute *attr, char *buf)
++{
++	unsigned long z_lo, z_hi;
++	int x, y, z;
++
++	mdps_get_xy(mdps.device->handle, &x, &y);
++
++	mdps_ALRD(mdps.device->handle, MDPS_OUTZ_L, &z_lo);
++	mdps_ALRD(mdps.device->handle, MDPS_OUTZ_H, &z_hi);
++
++	z = mdps_glue_bytes(z_hi, z_lo);
++
++	return sprintf(buf, "(%d, %d, %d)\n", x, y, z);
++}
++
++static ssize_t mdps_state_show(struct device *dev,
++                               struct device_attribute *attr, char *buf)
++{
++	return sprintf(buf, "%s\n", (mdps.is_on ? "on" : "off"));
++}
++
++static ssize_t mdps_mouse_show(struct device *dev,
++                               struct device_attribute *attr, char *buf)
++{
++	return sprintf(buf, "%s\n", (mouse ? "enabled" : "disabled"));
++}
++
++static ssize_t mdps_calibrate_show(struct device *dev,
++                                   struct device_attribute *attr, char *buf)
++{
++	return sprintf(buf, "(%d,%d)\n", mdps.xcalib, mdps.ycalib);
++}
++
++static ssize_t mdps_calibrate_store(struct device *dev,
++                   struct device_attribute *attr, const char *buf, size_t count)
++{
++	mdps_calibrate_mouse();
++	return count;
++}
++
++static ssize_t mdps_rate_show(struct device *dev,
++                              struct device_attribute *attr, char *buf)
++{
++	unsigned long ctrl;
++	int rate = 0;
++
++	mdps_ALRD(mdps.device->handle, MDPS_CTRL_REG1, &ctrl);
++
++	switch (ctrl & 0x30)
++	{
++	case 0x00:
++		rate = 40;
++		break;
++
++	case 0x10:
++		rate = 160;
++		break;
++
++	case 0x20:
++		rate = 640;
++		break;
++
++	case 0x30:
++		rate = 2560;
++		break;
++	}
++
++	return sprintf(buf, "sampling rate:\t%dHz\n", rate);
++}
++
++static ssize_t mdps_state_store(struct device *dev,
++                                  struct device_attribute *attr,
++                                  const char *buf, size_t count)
++{
++	int state;
++
++	if (sscanf(buf, "%d", &state) != 1 || (state != 1 && state != 0))
++		return -EINVAL;
++
++	mdps.is_on = state;
++
++	if (mdps.is_on)
++		mdps_poweron(mdps.device->handle);
++	else
++		mdps_poweroff(mdps.device->handle);
++
++	return count;
++}
++
++static ssize_t mdps_mouse_store(struct device *dev,
++                   struct device_attribute *attr, const char *buf, size_t count)
++{
++	int tmp;
++	if (sscanf(buf, "%d", &tmp) != 1 || (tmp != 1 && tmp != 0))
++		return -EINVAL;
++
++	mouse = tmp;
++
++	if (mouse)
++		mdps_mouse_enable();
++	else
++		mdps_mouse_disable();
++
++	return count;
++}
++
++static DEVICE_ATTR(position, 0444, mdps_position_show, NULL);
++static DEVICE_ATTR(position3d, 0444, mdps_position3d_show, NULL);
++static DEVICE_ATTR(calibrate, 0644, mdps_calibrate_show, mdps_calibrate_store);
++static DEVICE_ATTR(rate, 0444, mdps_rate_show, NULL);
++static DEVICE_ATTR(state, 0644, mdps_state_show, mdps_state_store);
++static DEVICE_ATTR(mouse, 0644, mdps_mouse_show, mdps_mouse_store);
++
++static struct attribute *mdps_attributes[] = {
++	&dev_attr_position.attr,
++	&dev_attr_position3d.attr,
++	&dev_attr_calibrate.attr,
++	&dev_attr_rate.attr,
++	&dev_attr_state.attr,
++	&dev_attr_mouse.attr,
++	NULL
++};
++
++static struct attribute_group mdps_attribute_group = {
++	.attrs = mdps_attributes
++};
++
++int mdps_add_fs(struct acpi_device *device)
++{
++	mdps.pdev = platform_device_register_simple(DRIVER_NAME, -1, NULL, 0);
++	if (IS_ERR(mdps.pdev))
++		return PTR_ERR(mdps.pdev);
++
++	return sysfs_create_group(&mdps.pdev->dev.kobj, &mdps_attribute_group);
++}
++
++int mdps_remove_fs(void)
++{
++	sysfs_remove_group(&mdps.pdev->dev.kobj, &mdps_attribute_group);
++	platform_device_unregister(mdps.pdev);
++	return 0;
++}
++
++static int __init mdps_init_module(void)
++{
++	int ret;
++	acpi_status status;
++	acpi_handle handle = 0;
++
++	if (acpi_disabled)
++		return -ENODEV;
++
++	/* device detection: see if our device is present */
++	status = acpi_get_handle(NULL, "\\_SB.C002.ACEL", &handle);
++	if (ACPI_FAILURE(status)) {
++		printk(KERN_INFO "mdps: HP Mobile Data Protection System 3D device not found\n");
++		return -ENODEV;
++	}
++
++	ret = acpi_bus_register_driver(&mdps_driver);
++	if (ret < 0)
++		return ret;
++
++	return 0;
++}
++
++static void __exit mdps_exit_module(void)
++{
++	acpi_bus_unregister_driver(&mdps_driver);
++}
++
++module_init(mdps_init_module);
++module_exit(mdps_exit_module);

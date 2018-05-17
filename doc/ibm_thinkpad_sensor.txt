@@ -1,0 +1,66 @@
+// thpad.cpp : Defines the entry point for the console application.
+//
+
+#include <windows.h>
+#include <stdio.h>
+
+// CMC note:  tips per Ben Suter -- how to access Thinkpad DLL
+
+// path to thinkpad sensor dll -- I think I may distribute this with 
+// QCN so installing Thinkpad software not necessary?
+const char strDLLThinkpad[] = {"c:\\temp\\win32\\sensor.dll"};
+
+typedef struct
+{
+  	int status;
+	unsigned short x;
+    unsigned short y;
+	long junk[4];  // pad the struct, as get buffer overruns without it (i.e. if just status/x/y)
+} SensorData;
+
+
+// DLL function signature -- note the use of __stdcall so Windows does the cleanup (as opposed to __cdecl)
+typedef int (__stdcall *importFunction)(SensorData* psd); 
+
+int main(int argc, char** argv)
+{
+        importFunction getData;
+ 
+        // Load DLL file
+		HINSTANCE libraryHandle = LoadLibrary(strDLLThinkpad);
+        if (libraryHandle == NULL) {
+                printf("ERROR: unable to load Thinkpad sensor library\n");
+                return 1;
+        }
+ 
+        // Get function pointer
+        getData = (importFunction) GetProcAddress(libraryHandle, "ShockproofGetAccelerometerData");
+        if (getData == NULL) {
+                printf("ERROR: unable to find Thinkpad sensor function\n");
+                FreeLibrary(libraryHandle);
+                return 1;
+        }
+
+        SensorData* psd = new SensorData;
+		for (int j=0; psd && j<1000; j++) { // read 1000 thinkpad accel points -- seem to be x=510,y=510 is the level/centre?
+			// Call function.
+			memset(psd, 0x00, sizeof(SensorData)); //init struct to 0's
+			getData(psd); 
+
+			// Display result to console
+			fprintf(stdout, "HD status: %d   x: %d   y: %d\n", 
+				psd->status, psd->x, psd->y);
+			fflush(stdout);
+
+			Sleep(20); // sleep 20 milliseconds, should give roughly 50Hz access, need to validate vs dtime() though 
+		}  
+		if (psd) { // valid pointer to struct 
+			 delete psd;
+		     psd = NULL;		// Unload DLL file
+		}
+
+        FreeLibrary(libraryHandle);
+ 
+ 	return 0;
+}
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document> 
+    <name>netpoly.kml</name> 
+    <open>1</open> 
+    <description>ANSS Network Regions</description> 
+    <Style id="Red50opaque"> 
+      <LineStyle> 
+        <width>3</width> 
+      </LineStyle> 
+    </Style> 
+    <Placemark> 
+      <name>SCSN region</name>
+      <styleUrl>#Red50opaque</styleUrl>
+      <MultiGeometry>
+      <LineString>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>
+          -117.76,37.43 
+          -121.25,34.5
+          -118.5,31.5
+          -114,31.5 
+          -114,34.5
+          -117.76,37.43
+        </coordinates>
+      </LineString> 
+      </MultiGeometry>
+    </Placemark> 
+    </Document> 
+</kml>

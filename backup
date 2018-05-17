@@ -1,0 +1,5 @@
+#!/bin/sh
+rm -f qcn.zip
+zip -r qcn.zip . -x qcn-*.zip 
+scp qcn.zip carlgt1@qcn-upl.stanford.edu:
+rm -f qcn.zip

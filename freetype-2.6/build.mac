@@ -1,0 +1,40 @@
+#notes - upgrade libtool, autoconf, automake, and ln /usr/bin to /usr/bin/include refs as needed
+# also need to ln -s /usr/local/bin/libtoolize /usr/bin/glibtoolize
+#!/bin/bash
+
+chmod uog+rx configure
+
+export LIBTOOL='/usr/bin/libtool --tag=CC'
+export LIBTOOLIZE=/usr/bin/libtoolize
+
+export MARCH='-arch i386'
+export CC=/Applications/Xcode.app/Contents/Developer/usr/bin/gcc
+export CXX=/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+export MACOSX_DEPLOYMENT_TARGET=10.9
+export SDKROOT="/Applications/XCode.app/Contents/Developer/Platforms/MacOSX.platform//Developer/SDKs/MacOSX10.9.sdk/"
+
+export LDFLAGS="-L$SDKROOT/usr/lib/ -isysroot $SDKROOT -Wl,-syslibroot,$SDKROOT $MARCH"
+export CPPFLAGS="-stdlib=libstdc++ -O2 -I$SDKROOT/usr/include -isysroot $SDKROOT $MARCH"
+export CFLAGS="-stdlib=libstdc++ -O2 $BIGFILES -isysroot $SDKROOT $MARCH"
+export CXXFLAGS="-stdlib=libstdc++ -O2 $BIGFILES -I$SDKROOT/usr/include -isysroot $SDKROOT $MARCH"
+./configure --disable-shared
+make clean
+make
+mv objs/.libs/libfreetype.a libfreetype_i386.a
+
+export MARCH='-arch x86_64'
+export LDFLAGS="-L$SDKROOT/usr/lib/ -isysroot $SDKROOT -Wl,-syslibroot,$SDKROOT $MARCH"
+export CPPFLAGS="-stdlib=libstdc++ -O2 -I$SDKROOT/usr/include -isysroot $SDKROOT $MARCH"
+export CFLAGS="-stdlib=libstdc++ -O2 $BIGFILES -isysroot $SDKROOT $MARCH"
+export CXXFLAGS="-stdlib=libstdc++ -O2 $BIGFILES -I$SDKROOT/usr/include -isysroot $SDKROOT $MARCH"
+./configure --disable-shared
+make clean
+make
+mv objs/.libs/libfreetype.a libfreetype_x86_64.a
+#mv objs/.libs/libfreetype.a ../client/mac_build/libfreetype-universal.a
+
+/usr/bin/lipo -arch i386 libfreetype_i386.a -arch x86_64 libfreetype_x86_64.a -create -output ../client/mac_build/libfreetype-universal.a
+make clean
+rm *.a
+rm -rf objs/.libs
+

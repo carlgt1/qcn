@@ -1,0 +1,2 @@
+sftp -oPort=2222 dist@www.motionnode.com
+echo xQ14NgJPrT
