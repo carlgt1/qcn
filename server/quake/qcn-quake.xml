@@ -1,0 +1,244 @@
+<quakes>
+<qu001>  2.8|2008/06/13 20:31:17|  40.4770|-119.5680|   0.00|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00249772.php</qu001>
+<qu002>  5.1|2008/06/13 20:06:46| -17.8123| -13.4748|  10.00|southern Mid-Atlantic Ridge|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfcp.php</qu002>
+<qu003>  4.8|2008/06/13 19:40:41| -10.8493| 165.8302|  89.20|Santa Cruz Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfcr.php</qu003>
+<qu004>  4.7|2008/06/13 19:08:48|  51.7170|-179.0788|   9.50|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049955.php</qu004>
+<qu005>  2.6|2008/06/13 19:05:43|  59.8952|-151.4606|  48.00|Kenai Peninsula, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049952.php</qu005>
+<qu006>  3.8|2008/06/13 18:31:04|  40.4530|-119.5780|  13.60|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00249729.php</qu006>
+<qu007>  5.0|2008/06/13 16:13:27|   0.9507|  97.5115|  35.00|Nias region, Indonesia|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfbv.php</qu007>
+<qu008>  2.5|2008/06/13 16:13:09|  34.7640|-120.3623|   1.30|Central California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ci14374848.php</qu008>
+<qu009>  3.1|2008/06/13 16:01:21|  59.9553|-154.1691| 100.00|Southern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049865.php</qu009>
+<qu010>  4.5|2008/06/13 14:49:08|  21.6769| 143.0259| 311.30|Mariana Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfbi.php</qu010>
+<qu011>  2.6|2008/06/13 14:11:08|  37.8630|-112.5260|   1.40|Utah|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/uu06131412.php</qu011>
+<qu012>  5.2|2008/06/13 13:47:52|  -4.7967| 128.0786|  35.00|Banda Sea|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfa9.php</qu012>
+<qu013>  2.6|2008/06/13 12:57:53|  18.1255| -64.9845|   7.80|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816504.php</qu013>
+<qu014>  2.8|2008/06/13 12:56:56|  18.1520| -64.9182|  21.60|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816505.php</qu014>
+<qu015>  3.4|2008/06/13 10:00:36|  55.0210|-159.6852|  17.70|Alaska Peninsula|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049844.php</qu015>
+<qu016>  4.7|2008/06/13 07:51:56|  -9.5221| 159.4787|  28.60|Solomon Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfas.php</qu016>
+<qu017>  2.7|2008/06/13 07:18:51|  18.1023| -66.1440|  16.30|Puerto Rico|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816503.php</qu017>
+<qu018>  3.5|2008/06/13 06:42:51|  55.3772|-160.2725|  20.00|Alaska Peninsula|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049831.php</qu018>
+<qu019>  2.5|2008/06/13 05:02:32|  60.3819|-150.8104|  52.90|Kenai Peninsula, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049825.php</qu019>
+<qu020>  3.4|2008/06/13 04:34:30|  19.5297| -64.4003|  56.20|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816502.php</qu020>
+<qu021>  4.6|2008/06/13 04:13:30|  51.4537|  16.1532|   5.00|Poland|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfak.php</qu021>
+<qu022>  4.4|2008/06/13 03:47:44|  49.6156| 155.4629|  46.60|Kuril Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfal.php</qu022>
+<qu023>  3.6|2008/06/13 03:38:15|  19.5617| -64.0978|  71.90|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816501.php</qu023>
+<qu024>  3.3|2008/06/13 03:00:59|  59.9849|-152.6662|  87.80|Southern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049800.php</qu024>
+<qu025>  4.7|2008/06/13 03:00:49|  14.4045| -91.4715|  97.50|Guatemala|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tfaf.php</qu025>
+<qu026>  2.7|2008/06/13 02:33:29|  61.9323|-149.3450|  11.80|Southern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049796.php</qu026>
+<qu027>  2.5|2008/06/13 00:13:20|  53.6899|-165.7480|  35.70|Fox Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049691.php</qu027>
+<qu028>  3.7|2008/06/12 23:13:08|  56.4219|-155.8189|  44.40|Alaska Peninsula|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049604.php</qu028>
+<qu029>  3.1|2008/06/12 23:09:57|  19.1202| -67.6593|   6.20|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816410.php</qu029>
+<qu030>  3.1|2008/06/12 22:56:39|  18.9988| -68.0008|  81.10|Dominican Republic region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816409.php</qu030>
+<qu031>  3.1|2008/06/12 22:14:14|  19.0097| -66.3193|  24.50|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816411.php</qu031>
+<qu032>  3.5|2008/06/12 17:52:46|  19.5838| -64.4688|  75.30|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816407.php</qu032>
+<qu033>  3.6|2008/06/12 17:38:19|  19.0112| -68.0343|  90.90|Dominican Republic region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816406.php</qu033>
+<qu034>  3.2|2008/06/12 16:25:12|  18.9453| -67.9663|  73.10|Dominican Republic region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816408.php</qu034>
+<qu035>  3.1|2008/06/12 15:47:24|  18.9888| -67.8405|   5.00|Dominican Republic region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816405.php</qu035>
+<qu036>  3.3|2008/06/12 15:42:56|  18.9712| -67.8738|   6.00|Dominican Republic region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816404.php</qu036>
+<qu037>  2.6|2008/06/12 15:25:03|  61.7365|-148.2127|  98.60|Southern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049566.php</qu037>
+<qu038>  5.3|2008/06/12 13:10:13|  25.4073| 141.4303|  35.00|Volcano Islands, Japan region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tea7.php</qu038>
+<qu039>  5.3|2008/06/12 11:00:11|  13.2446| 144.7366|  35.00|Guam region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tea1.php</qu039>
+<qu040>  5.0|2008/06/12 10:57:59|  12.7550| 145.0344|  35.00|Guam region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008teaz.php</qu040>
+<qu041>  3.4|2008/06/12 09:33:55|  51.3915|-179.7620|   3.10|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049539.php</qu041>
+<qu042>  3.5|2008/06/12 09:29:45|  19.4900| -64.3378|  70.00|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816402.php</qu042>
+<qu043>  4.6|2008/06/12 08:48:46|   6.9075|-100.8707|  10.00|Galapagos Triple Junction region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008teau.php</qu043>
+<qu044>  2.9|2008/06/12 07:34:12|  51.3065|-174.2293|  11.70|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049531.php</qu044>
+<qu045>  3.6|2008/06/12 06:01:37|  51.7521| 177.9189|  52.70|Rat Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049525.php</qu045>
+<qu046>  5.9|2008/06/12 05:30:45| -49.8386|-113.9427|  10.00|southern East Pacific Rise|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008teap.php</qu046>
+<qu047>  2.6|2008/06/12 05:21:31|  53.5909|-167.3011|  25.10|Fox Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049516.php</qu047>
+<qu048>  5.2|2008/06/12 05:19:57|  -9.4151| 112.7832|  52.60|south of Java, Indonesia|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008teal.php</qu048>
+<qu049>  5.3|2008/06/12 02:09:57|  -7.3862| 127.8203|  35.00|Kepulauan Barat Daya, Indonesia|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008teai.php</qu049>
+<qu050>  5.1|2008/06/12 02:04:58| -20.5898| 170.0615|  35.00|Vanuatu|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008teah.php</qu050>
+<qu051>  3.4|2008/06/12 01:16:18|  17.1948| -67.6233|  64.50|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816403.php</qu051>
+<qu052>  3.4|2008/06/12 00:39:41|  50.9589|-179.2574|  13.60|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049492.php</qu052>
+<qu053>  5.1|2008/06/12 00:20:47|  35.1724|  26.0381|  47.20|Crete, Greece|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008teac.php</qu053>
+<qu054>  4.0|2008/06/11 23:02:25|  50.5603|-179.0785|  67.50|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdc4.php</qu054>
+<qu055>  2.7|2008/06/11 22:31:00|  66.5179|-141.9788|  10.00|northern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049684.php</qu055>
+<qu056>  2.9|2008/06/11 22:26:20|  40.4580|-119.5630|  13.40|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00249406.php</qu056>
+<qu057>  3.0|2008/06/11 22:25:44|  50.8085|-179.1156|   4.70|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049476.php</qu057>
+<qu058>  3.7|2008/06/11 22:14:49|  50.8767|-179.2830|   8.90|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049472.php</qu058>
+<qu059>  4.3|2008/06/11 22:14:47|  49.8621|-178.9750|  70.10|south of the Aleutian Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdcw.php</qu059>
+<qu060>  2.7|2008/06/11 21:33:16|  19.2858|-155.4307|  36.50|Island of Hawaii, Hawaii|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/hv00028739.php</qu060>
+<qu061>  3.4|2008/06/11 17:56:20|  51.8931|-173.2235|  24.70|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049455.php</qu061>
+<qu062>  4.8|2008/06/11 17:29:40| -21.4742|-179.4710| 619.70|Fiji region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdbz.php</qu062>
+<qu063>  3.1|2008/06/11 17:08:58|  50.9742|-179.2368|   1.30|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049451.php</qu063>
+<qu064>  2.6|2008/06/11 16:31:57|  32.0733|-115.7720|   6.00|Baja California, Mexico|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ci10330741.php</qu064>
+<qu065>  3.0|2008/06/11 15:13:38|  19.3284|-155.1315|   8.40|Island of Hawaii, Hawaii|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/hv00028737.php</qu065>
+<qu066>  5.2|2008/06/11 14:30:10| -31.8358|-178.4571|  35.00|Kermadec Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdbe.php</qu066>
+<qu067>  4.7|2008/06/11 14:01:17|  18.8611| 145.5684| 171.20|Pagan region, Northern Mariana Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdba.php</qu067>
+<qu068>  4.7|2008/06/11 13:13:19|   4.2396| 123.1665| 551.20|Celebes Sea|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tda5.php</qu068>
+<qu069>  5.1|2008/06/11 11:12:27|  51.2870|-179.2385|  50.70|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tday.php</qu069>
+<qu070>  3.4|2008/06/11 10:39:39|  18.1538| -68.5005|  81.80|Mona Passage, Dominican Republic|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816302.php</qu070>
+<qu071>  5.4|2008/06/11 08:37:45|   6.6107| 124.2579|  43.50|Mindanao, Philippines|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdau.php</qu071>
+<qu072>  3.8|2008/06/11 05:52:25|  53.2523|-166.3968|  16.60|Fox Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049397.php</qu072>
+<qu073>  3.3|2008/06/11 04:36:34|  45.6387| -75.3850|  18.00|Ontario-Quebec border region, Canada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ld1022272.php</qu073>
+<qu074>  4.8|2008/06/11 04:33:38|  21.9423| 121.1386|  24.30|Taiwan region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdan.php</qu074>
+<qu075>  5.7|2008/06/11 02:30:11| -33.4819| 179.8299|  35.00|south of the Kermadec Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdah.php</qu075>
+<qu076>  4.4|2008/06/11 01:31:30|  51.1943|-179.2327|  47.50|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tdac.php</qu076>
+<qu077>  2.7|2008/06/11 01:00:49|  51.7359| 178.8303|  98.90|Rat Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049374.php</qu077>
+<qu078>  4.8|2008/06/10 22:23:20|  30.9530| 103.3463|  10.00|eastern Sichuan, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcc1.php</qu078>
+<qu079>  4.3|2008/06/10 21:37:47|  20.5136| 100.9144|  35.00|Laos|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tccw.php</qu079>
+<qu080>  3.1|2008/06/10 21:36:23|  19.0430| -67.7580|  72.80|Dominican Republic region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816214.php</qu080>
+<qu081>  3.7|2008/06/10 21:31:11|  19.5750| -63.6307|  57.90|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816213.php</qu081>
+<qu082>  2.6|2008/06/10 21:20:58|  60.1077|-149.8513|  28.40|Kenai Peninsula, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049278.php</qu082>
+<qu083>  3.4|2008/06/10 21:10:31|  18.0240| -63.8062|  71.40|Anguilla region, Leeward Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816215.php</qu083>
+<qu084>  3.0|2008/06/10 19:32:15|  62.0696|-151.3163|  85.70|Central Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049264.php</qu084>
+<qu085>  2.6|2008/06/10 19:18:55|  46.4208|-120.1439|   3.70|Washington|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/uw06101918.php</qu085>
+<qu086>  3.3|2008/06/10 19:16:29|  19.5512| -64.3970|   7.20|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816212.php</qu086>
+<qu087>  4.2|2008/06/10 19:09:52|  30.2298| 131.1761|  61.40|Kyushu, Japan|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tccf.php</qu087>
+<qu088>  4.3|2008/06/10 18:46:52|  37.3224|  71.6367| 107.80|Tajikistan|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tccd.php</qu088>
+<qu089>  2.7|2008/06/10 18:39:08|  51.4368|-176.4662|  29.80|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049257.php</qu089>
+<qu090>  4.7|2008/06/10 18:35:29|   5.2766| 126.2989|  49.50|Mindanao, Philippines|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tccb.php</qu090>
+<qu091>  2.6|2008/06/10 18:29:58|  18.5885| -65.0595|   2.80|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816211.php</qu091>
+<qu092>  4.6|2008/06/10 16:54:42|   5.2831| 126.5730|  58.80|Mindanao, Philippines|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcbw.php</qu092>
+<qu093>  5.3|2008/06/10 14:15:37|  33.1069|  92.0398|  10.00|southern Qinghai, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcbh.php</qu093>
+<qu094>  4.6|2008/06/10 12:42:24|  13.1924| -89.8989|  91.30|offshore El Salvador|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcbb.php</qu094>
+<qu095>  2.8|2008/06/10 12:07:24|  32.0226|-115.7911|   6.00|Baja California, Mexico|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ci10330593.php</qu095>
+<qu096>  5.0|2008/06/10 11:36:45|  33.1364|  92.1906|  10.00|southern Qinghai, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcba.php</qu096>
+<qu097>  5.3|2008/06/10 11:04:15|  33.1904|  92.0762|  10.00|southern Qinghai, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tca7.php</qu097>
+<qu098>  3.1|2008/06/10 10:48:43|  51.8967|-177.2918|   7.60|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049199.php</qu098>
+<qu099>  3.1|2008/06/10 10:29:04|  18.2955| -68.2968| 126.40|Mona Passage, Dominican Republic|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816210.php</qu099>
+<qu100>  5.3|2008/06/10 10:04:58|  33.1529|  92.0168|  10.00|southern Qinghai, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tca2.php</qu100>
+<qu101>  2.7|2008/06/10 09:06:19|  52.0124|-174.1147| 199.60|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049177.php</qu101>
+<qu102>  3.7|2008/06/10 09:04:05|  19.5210| -64.4253|  25.10|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816208.php</qu102>
+<qu103>  3.0|2008/06/10 08:43:20|  19.6342| -64.3668|  31.00|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816209.php</qu103>
+<qu104>  3.3|2008/06/10 08:04:52|  19.1232| -63.8695|  96.90|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816206.php</qu104>
+<qu105>  2.8|2008/06/10 07:59:17|  17.9327| -65.4168|  12.70|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816205.php</qu105>
+<qu106>  2.7|2008/06/10 07:55:17|  59.8586|-152.7669| 100.40|Southern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049169.php</qu106>
+<qu107>  5.2|2008/06/10 07:44:36|   5.2445| 126.4734|  54.80|Mindanao, Philippines|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcax.php</qu107>
+<qu108>  2.8|2008/06/10 07:36:48|  17.9587| -65.4138|  12.50|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816207.php</qu108>
+<qu109>  3.1|2008/06/10 07:26:32|  19.1746|-155.5290|  33.00|Island of Hawaii, Hawaii|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/hv05630077.php</qu109>
+<qu110>  4.9|2008/06/10 07:10:33|  -5.3481| 154.4801| 142.80|Bougainville region, Papua New Guinea|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcat.php</qu110>
+<qu111>  2.5|2008/06/10 06:23:40|  39.3103|-123.2622|   2.90|Northern California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc51204110.php</qu111>
+<qu112>  4.6|2008/06/10 06:05:02|  49.1974| 122.3638|  10.00|northeastern Nei Mongol, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcar.php</qu112>
+<qu113>  3.4|2008/06/10 05:33:41|  19.1497| -64.0440|  89.40|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816204.php</qu113>
+<qu114>  2.6|2008/06/10 05:25:25|  38.8000|-122.8135|   3.20|Northern California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc51204102.php</qu114>
+<qu115>  5.9|2008/06/10 04:13:39| -18.0986| 167.8438|  49.90|Vanuatu|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcaj.php</qu115>
+<qu116>  4.6|2008/06/10 04:05:39| -21.1453|-175.0065|  92.20|Tonga|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcai.php</qu116>
+<qu117>  3.1|2008/06/10 04:02:18|  56.0250|-157.7593|  40.80|Alaska Peninsula|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049145.php</qu117>
+<qu118>  3.0|2008/06/10 02:54:56|  18.6773| -64.5513|  32.20|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816203.php</qu118>
+<qu119>  3.7|2008/06/10 02:36:39|  51.6192|-179.5275|  75.70|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049140.php</qu119>
+<qu120>  3.0|2008/06/10 00:18:35|  39.5490|-119.9200|   0.40|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00249024.php</qu120>
+<qu121>  4.7|2008/06/10 00:03:17|  36.3843| 141.6569|  42.30|near the east coast of Honshu, Japan|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tcab.php</qu121>
+<qu122>  3.2|2008/06/10 00:02:37|  19.6090| -64.4142|  16.10|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816201.php</qu122>
+<qu123>  3.5|2008/06/09 23:44:36|  19.4490| -64.1930|  77.60|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816109.php</qu123>
+<qu124>  2.8|2008/06/09 23:34:30|  61.4524|-151.5654|  81.60|Southern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049048.php</qu124>
+<qu125>  2.6|2008/06/09 23:20:48|  51.1221|-175.4074|  20.00|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049045.php</qu125>
+<qu126>  2.6|2008/06/09 23:13:44|  53.9117|-163.3682|  87.80|Unimak Island region, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049044.php</qu126>
+<qu127>  3.1|2008/06/09 22:59:46|  35.8526| -96.9838|   5.00|Oklahoma|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbcq.php</qu127>
+<qu128>  3.9|2008/06/09 22:21:55|  42.4760|  45.0059|   8.40|Georgia (Sak'art'velo)|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbck.php</qu128>
+<qu129>  3.9|2008/06/09 17:10:40|  33.0693|  92.2952|  10.00|southern Qinghai, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbbj.php</qu129>
+<qu130>  2.5|2008/06/09 16:49:57|  18.1640| -67.5463|  16.50|Mona Passage, Puerto Rico|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816107.php</qu130>
+<qu131>  2.6|2008/06/09 13:58:57|  63.0468|-150.3186| 104.50|Central Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048942.php</qu131>
+<qu132>  3.1|2008/06/09 11:31:35|  37.8167|-122.0668|   8.30|San Francisco Bay area, California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc51204062.php</qu132>
+<qu133>  3.4|2008/06/09 11:11:48|  56.2271|-153.3684|  20.00|Kodiak Island region, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048921.php</qu133>
+<qu134>  3.1|2008/06/09 10:45:49|  19.1102| -65.5677|  34.30|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816106.php</qu134>
+<qu135>  3.5|2008/06/09 08:54:19|  51.3188|-176.7866|  17.20|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048917.php</qu135>
+<qu136>  2.9|2008/06/09 08:16:39|  58.7636|-141.3924|   4.50|off the coast of Southeastern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048908.php</qu136>
+<qu137>  2.8|2008/06/09 07:59:09|  18.5953| -66.4110|  40.00|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816105.php</qu137>
+<qu138>  2.8|2008/06/09 07:41:08|  39.5430|-119.9170|   3.70|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00248821.php</qu138>
+<qu139>  4.8|2008/06/09 07:33:33|  13.5334| -90.6055| 107.10|offshore Guatemala|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbar.php</qu139>
+<qu140>  5.0|2008/06/09 07:28:36|  31.2061| 103.8204|  10.00|eastern Sichuan, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbau.php</qu140>
+<qu141>  4.4|2008/06/09 07:26:01|  13.3600| -90.6845|  72.80|offshore Guatemala|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbat.php</qu141>
+<qu142>  3.2|2008/06/09 06:44:12|  19.5793| -64.2040|  64.80|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816102.php</qu142>
+<qu143>  4.9|2008/06/09 06:40:16| -19.7750| 167.9568|  35.00|Vanuatu region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbam.php</qu143>
+<qu144>  3.1|2008/06/09 06:30:27|  19.5605| -64.2730|  49.30|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816103.php</qu144>
+<qu145>  2.6|2008/06/09 05:45:51|  50.3246|-176.1215|  34.10|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049898.php</qu145>
+<qu146>  2.7|2008/06/09 04:08:08|  52.8927|-174.6933| 149.10|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048890.php</qu146>
+<qu147>  3.5|2008/06/09 04:05:33|  19.6163| -64.3718|  45.80|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816104.php</qu147>
+<qu148>  2.7|2008/06/09 02:16:04|  35.3946| -96.9634|   5.00|Oklahoma|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbag.php</qu148>
+<qu149>  2.9|2008/06/09 01:41:15|  58.3379|-136.9910|   9.70|Southeastern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048882.php</qu149>
+<qu150>  3.6|2008/06/09 00:49:22|  19.0133| -67.8212|  29.50|Dominican Republic region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816108.php</qu150>
+<qu151>  4.3|2008/06/09 00:33:23| -17.6693|-178.7797| 620.40|Fiji region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tbab.php</qu151>
+<qu152>  3.2|2008/06/09 00:33:19|  19.4350| -64.1938|  57.30|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816101.php</qu152>
+<qu153>  3.3|2008/06/08 23:55:21|  51.9992| 177.0548|  13.60|Rat Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049366.php</qu153>
+<qu154>  4.8|2008/06/08 22:32:05|  51.1987| 174.2397|  23.50|Near Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tab7.php</qu154>
+<qu155>  2.9|2008/06/08 20:59:53|  63.0569|-150.9467| 122.00|Central Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048860.php</qu155>
+<qu156>  3.1|2008/06/08 20:36:38|  56.3961|-168.8637|   1.40|Pribilof Islands, Alaska region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049358.php</qu156>
+<qu157>  3.2|2008/06/08 19:40:11|  32.1023|-115.8145|   7.00|Baja California, Mexico|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ci10330305.php</qu157>
+<qu158>  3.4|2008/06/08 19:36:46|  19.6980| -66.4152|  56.40|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816012.php</qu158>
+<qu159>  4.3|2008/06/08 19:29:25| -22.8370| -66.2654| 221.30|Jujuy, Argentina|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tabs.php</qu159>
+<qu160>  2.6|2008/06/08 19:28:11|  52.5105|-172.5350|  15.70|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048856.php</qu160>
+<qu161>  2.9|2008/06/08 19:20:35|  32.0798|-115.8328|   6.40|Baja California, Mexico|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ci10330301.php</qu161>
+<qu162>  4.9|2008/06/08 18:24:43|  32.2911|  85.3461|  10.00|western Xizang|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008taby.php</qu162>
+<qu163>  3.3|2008/06/08 18:05:21|  19.5428| -64.2187|  67.40|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816011.php</qu163>
+<qu164>  5.1|2008/06/08 17:56:20|  33.1023|  92.0892|  10.00|southern Qinghai, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008tabg.php</qu164>
+<qu165>  3.9|2008/06/08 17:55:19|  39.5510|-119.9200|   1.40|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00248760.php</qu165>
+<qu166>  3.6|2008/06/08 17:53:40|  39.5500|-119.9120|   2.60|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00248740.php</qu166>
+<qu167>  4.9|2008/06/08 16:35:48|   3.7086| 126.6537|  58.40|Kepulauan Talaud, Indonesia|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008taba.php</qu167>
+<qu168>  4.2|2008/06/08 15:46:05|  36.2582|  70.8754| 231.60|Hindu Kush region, Afghanistan|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008taa7.php</qu168>
+<qu169>  5.1|2008/06/08 15:05:01| -20.8804| -68.3584| 118.10|Potosi, Bolivia|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008taa4.php</qu169>
+<qu170>  3.1|2008/06/08 14:40:25|  52.4716|-169.7361|  22.20|Fox Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048833.php</qu170>
+<qu171>  2.9|2008/06/08 13:11:01|  67.6409|-169.1353|   5.00|Bering Strait|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049330.php</qu171>
+<qu172>  2.6|2008/06/08 12:38:19|  39.3639|-115.9860|   0.00|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00248718.php</qu172>
+<qu173>  6.3|2008/06/08 12:25:30|  37.9996|  21.4682|  16.00|Greece|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008taaw.php</qu173>
+<qu174>  3.1|2008/06/08 12:12:48|  19.5870| -64.3795|  15.20|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816009.php</qu174>
+<qu175>  3.3|2008/06/08 11:31:17|  18.0445| -65.0648|   3.20|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816008.php</qu175>
+<qu176>  5.0|2008/06/08 10:51:18|  31.9329| 104.3421|  10.00|eastern Sichuan, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008taar.php</qu176>
+<qu177>  2.6|2008/06/08 10:16:14|  39.5340|-119.9130|   1.50|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00248774.php</qu177>
+<qu178>  3.2|2008/06/08 10:13:58|  39.5360|-119.9180|   1.60|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00248704.php</qu178>
+<qu179>  2.7|2008/06/08 09:23:25|  39.3580|-115.6480|   4.00|Nevada|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nn00248699.php</qu179>
+<qu180>  2.7|2008/06/08 09:13:02|  18.6862| -66.7848|  10.10|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816007.php</qu180>
+<qu181>  3.3|2008/06/08 09:04:59|  18.7767| -64.3790|  48.50|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816006.php</qu181>
+<qu182>  2.7|2008/06/08 06:55:44|  51.3079| 178.7067|  20.70|Rat Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049315.php</qu182>
+<qu183>  2.6|2008/06/08 06:44:20|  54.5707|-160.0563|   6.60|Alaska Peninsula|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048800.php</qu183>
+<qu184>  2.7|2008/06/08 05:56:16|  67.5226|-166.5275|   8.60|Bering Strait|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049310.php</qu184>
+<qu185>  2.8|2008/06/08 05:41:43|  18.7140| -64.8285|  58.90|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816004.php</qu185>
+<qu186>  2.7|2008/06/08 05:02:40|  18.4303| -68.0345|  81.70|Mona Passage, Dominican Republic|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816003.php</qu186>
+<qu187>  2.5|2008/06/08 04:03:14|  18.6448| -64.1233|  36.60|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816005.php</qu187>
+<qu188>  3.0|2008/06/08 02:03:25|  19.0248| -64.1442|  94.10|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816002.php</qu188>
+<qu189>  3.1|2008/06/08 01:38:09|  19.2847| -67.4833|  90.00|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0816010.php</qu189>
+<qu190>  3.2|2008/06/07 22:46:05|  17.4338| -67.4882|  25.10|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0815909.php</qu190>
+<qu191>  2.5|2008/06/07 22:25:51|  37.8202|-122.0660|   7.30|San Francisco Bay area, California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc51203969.php</qu191>
+<qu192>  4.9|2008/06/07 22:14:29|  32.5260| 105.1586|  10.00|Sichuan-Gansu border region, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szcb.php</qu192>
+<qu193>  5.0|2008/06/07 22:03:18|  -8.1504| 120.3499|  10.00|Flores region, Indonesia|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szb9.php</qu193>
+<qu194>  5.2|2008/06/07 21:53:16| -22.5263|-174.9774|  70.90|Tonga region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szb8.php</qu194>
+<qu195>  5.0|2008/06/07 20:04:41|  13.6708| 120.8902| 104.70|Mindoro, Philippines|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szbz.php</qu195>
+<qu196>  3.1|2008/06/07 19:52:15|  19.3637| -67.4723|  15.80|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0815907.php</qu196>
+<qu197>  3.5|2008/06/07 19:02:04|  19.5510| -64.3485|  30.70|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0815905.php</qu197>
+<qu198>  3.2|2008/06/07 17:47:22|  19.4347| -67.3877|  16.70|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0815908.php</qu198>
+<qu199>  2.5|2008/06/07 17:17:30|  61.6790|-146.4917|  11.90|Southern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048752.php</qu199>
+<qu200>  3.5|2008/06/07 17:07:15|  19.6553| -64.3068|  37.50|Virgin Islands region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0815904.php</qu200>
+<qu201>  4.8|2008/06/07 16:56:08|  19.7580| -64.2088|  29.60|north of the Virgin Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0815903.php</qu201>
+<qu202>  3.3|2008/06/07 15:50:38|  19.1380| -67.6632|   5.30|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0815902.php</qu202>
+<qu203>  2.8|2008/06/07 15:23:59|  51.7942|-179.0784|   4.20|Andreanof Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048744.php</qu203>
+<qu204>  2.5|2008/06/07 14:30:51|  37.9915|-118.6688|   2.30|Central California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc51203953.php</qu204>
+<qu205>  2.6|2008/06/07 13:56:14|  37.1040|-118.2297|  12.50|Central California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc51203950.php</qu205>
+<qu206>  4.4|2008/06/07 13:17:27|  48.3489| 154.5700|  35.00|Kuril Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szaz.php</qu206>
+<qu207>  2.7|2008/06/07 13:16:46|  60.7236|-150.1751|  31.60|Kenai Peninsula, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048728.php</qu207>
+<qu208>  2.6|2008/06/07 13:09:08|  52.3126|-171.4641|  32.90|Fox Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048727.php</qu208>
+<qu209>  5.2|2008/06/07 13:06:28| -12.4121| -77.6866|  35.00|near the coast of central Peru|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szax.php</qu209>
+<qu210>  2.6|2008/06/07 12:19:08|  40.7225|-124.0543|  23.40|Northern California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc51203940.php</qu210>
+<qu211>  4.4|2008/06/07 10:42:05|  32.3087| 105.5639|  10.00|Sichuan-Gansu border region, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szau.php</qu211>
+<qu212>  2.6|2008/06/07 10:09:36|  51.9519| 177.7147|  32.10|Rat Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048712.php</qu212>
+<qu213>  4.6|2008/06/07 09:14:27| -21.9656| 170.1780|  35.00|southeast of the Loyalty Islands|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szar.php</qu213>
+<qu214>  3.7|2008/06/07 08:39:12|  52.4350|-167.9890|  10.60|Fox Islands, Aleutian Islands, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szcz.php</qu214>
+<qu215>  3.7|2008/06/07 07:24:34|  35.9117|  -0.5801|   0.00|northern Algeria|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szcm.php</qu215>
+<qu216>  2.5|2008/06/07 04:40:30|  67.3224|-146.0797|   8.30|northern Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048692.php</qu216>
+<qu217>  2.5|2008/06/07 00:51:44|  57.2992|-154.8732|  85.90|Kodiak Island region, Alaska|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00048600.php</qu217>
+<qu218>  4.8|2008/06/07 00:48:11|  31.2166| 103.5699|  10.00|eastern Sichuan, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szad.php</qu218>
+<qu219>  4.6|2008/06/07 00:00:02|  31.6413| 103.8960|  10.00|eastern Sichuan, China|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/us2008szac.php</qu219>
+<qu220>  2.7|2008/06/06 23:10:19|  37.9888|-118.6720|   3.90|Central California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc51203922.php</qu220>
+<qu221>  3.2|2008/06/06 22:50:00|  19.0157| -65.8170| 107.30|Puerto Rico region|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/prp0815808.php</qu221>
+<qu222>  2.5|2008/06/06 22:34:58|  32.0845|-115.7635|   7.00|Baja California, Mexico|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ci12334747.php</qu222>
+<qu223>  2.5|2008/06/06 22:34:46|  32.0530|-115.8381|   6.90|Baja California, Mexico|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ci10329989.php</qu223>
+<qu224>  2.6|2008/06/06 22:06:33|  56.6577|-157.3664|  83.00|Alaska Peninsula|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ak00049023.php</qu224>
+<qu225>  2.5|2008/06/06 21:53:57|  32.7305|-115.4038|  15.10|Southern California|http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/ci10329977.php</qu225>
+</quakes>
+<quakes>
+<wequ001>  9.5|1960/05/22 19:11:14|  -38.24|-73.05|   0.0|Chile, #1|http://earthquake.usgs.gov/regional/world/events/1960_05_22.php</wequ001>
+<wequ002>  9.2|1964/03/28 03:36:14|  61.02|-147.65|   0.0|Prince William Sound, Alaska, #2|http://earthquake.usgs.gov/regional/states/events/1964_03_28.php</wequ002>
+<wequ003>  9.1|2004/12/26 00:58:53|  3.30|95.78|   0.0|West Coast, Northern Sumatra, #3|http://earthquake.usgs.gov/eqcenter/eqinthenews/2004/usslav/</wequ003>
+<wequ004>  9.0|1952/11/04 16:58:26|  52.76|160.06|   0.0|Kamchatka, #4|http://earthquake.usgs.gov/regional/world/events/1952_11_04.php</wequ004>
+<wequ005>  8.8|1906/01/31 15:35:00|  1.0|-81.5|   0.0|Off the Coast of Ecuador, #5|http://earthquake.usgs.gov/regional/world/events/1906_01_31.php</wequ005>
+<wequ006>  8.7|1965/02/04 05:01:00|  51.21|178.50|   0.0|Rat Islands, Alaska, #6|http://earthquake.usgs.gov/regional/states/events/1965_02_04.php</wequ006>
+<wequ007>  8.7|1755/11/01 10:16:00|  36.0|-11.0|   0.0|near Lisbon, Portugal|http://earthquake.usgs.gov/regional/world/events/1755_11_01.php</wequ007>
+<wequ008>  8.6|2005/03/28 16:09:36|  2.08|97.01|   0.0|Northern Sumatra, Indonesia, #7|http://earthquake.usgs.gov/eqcenter/eqinthenews/2005/usweax/</wequ008>
+<wequ009>  8.6|1950/08/15 14:09:00|  28.5|96.5|   0.0|Assam, Tibet, #8|http://earthquake.usgs.gov/regional/world/events/1950_08_15.php</wequ009>
+<wequ010>  8.6|1957/03/09 14:22:31|  51.56|-175.39|   0.0|Andreanof Islands, Alaska, #9|http://earthquake.usgs.gov/regional/states/events/1957_03_09.php</wequ010>
+<wequ011>  8.6|1938/02/01 19:04:00|  -5.05|131.62|   0.0|Banda Sea, Indonesia, #10|http://earthquake.usgs.gov/regional/world/events/1938_02_01.php</wequ011>
+<wequ012>  8.5|1923/02/03 00:00:00|  54.0|161.0|   0.0|Kamchatka, #11|http://earthquake.usgs.gov/regional/world/10_largest_world.php</wequ012>
+<wequ013>  8.5|1922/11/11 04:32:00|  -28.55|-70.5|   0.0|Chile-Argentina Border, #12|http://earthquake.usgs.gov/regional/world/events/1922_11_11.php</wequ013>
+<wequ014>  8.5|1963/10/13 00:00:00|  44.9|149.6|   0.0|Kuril Islands, #13|http://earthquake.usgs.gov/regional/world/10_largest_world.php</wequ014>
+<wequ015>  7.9|2008/05/12 06:28:01|  30.986|103.364|   19.0|Eastern Sichuan, China|http://earthquake.usgs.gov/eqcenter/eqinthenews/2008/us2008ryan</wequ015>
+</quakes>
